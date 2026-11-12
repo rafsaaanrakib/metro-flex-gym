@@ -1,0 +1,13 @@
+# Metro Flex Gym — Cloudflare Worker (static assets only).
+# The site is a static Next.js export (`npm run build` writes ./out).
+# Cloudflare's Git integration deploys it from this repo: build command
+# `npm run build`, deploy command `npx wrangler deploy`. No Worker script
+# is needed — Cloudflare serves ./out directly. (Same pattern as the
+# rakibwebstudio site, which runs as a Worker with static assets.)
+name = "metro-flex-gym"
+compatibility_date = "2026-11-12"
+
+[assets]
+directory = "./out"
+not_found_handling = "404-page"
+html_handling = "auto-trailing-slash"

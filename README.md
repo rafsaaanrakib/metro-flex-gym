@@ -3,16 +3,20 @@
 Website for Metro Flex Gym, a gents & ladies gym in Agrabad, Chattogram.
 Built with Next.js 14 (static export), Tailwind CSS and Framer Motion.
 
-## Deploy on Cloudflare Pages (Git integration)
+## Deploy on Cloudflare (Git integration, Worker with static assets)
 
-- **Framework preset:** Next.js (Static HTML Export)
+Cloudflare's "Create application" flow connects this repo as a Worker
+project — that is the flow to use (the site needs no server code, so the
+Worker just serves the built files). The repo's `wrangler.toml` tells it
+to serve `./out`.
+
 - **Build command:** `npm run build`
-- **Build output directory:** `out`
+- **Deploy command:** `npx wrangler deploy`
 - **Root directory:** `/` (repo root)
 - **Node.js version:** 20
 
 After the custom domain `metroflexgym.com.bd` is approved, add it as a custom
-domain on the Pages project.
+domain on the Worker project.
 
 ## Local development
 
