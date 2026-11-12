@@ -9,7 +9,7 @@ export function MobileMenu({ items }: { items: { href: string; label: string }[]
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden shrink-0">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
@@ -22,7 +22,7 @@ export function MobileMenu({ items }: { items: { href: string; label: string }[]
         <span className={`block h-0.5 w-5 bg-bone transition-transform ${open ? '-translate-y-[7px] -rotate-45' : ''}`} aria-hidden="true" />
       </button>
       {open && (
-        <div className="absolute inset-x-0 top-full border-b border-white/10 bg-ink/98 shadow-lg shadow-black/50">
+        <div className="absolute inset-x-0 top-full h-[calc(100vh-4rem)] overflow-y-auto border-b border-white/10 bg-ink shadow-lg shadow-black/50 md:h-[calc(100vh-4.5rem)]">
           <nav className="mx-auto max-w-7xl px-4 py-4 md:px-8" aria-label="Mobile navigation">
             {items.map((item) => (
               <Link

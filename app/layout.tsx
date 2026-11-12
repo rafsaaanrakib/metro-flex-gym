@@ -109,9 +109,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollProgress />
         <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-ink/85 backdrop-blur-md">
           <div className="mx-auto flex h-16 md:h-[72px] max-w-7xl items-center justify-between px-4 md:px-8">
-            <Link href="/" className="flex items-center gap-3" aria-label="Metro Flex Gym — home">
+            <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Metro Flex Gym — home">
               <Image src="/images/logo.webp" alt="Metro Flex Gym logo" width={34} height={48} className="h-11 w-auto md:h-12" priority />
-              <span className="leading-none">
+              <span className="hidden leading-none whitespace-nowrap sm:block">
                 <span className="block font-display text-base md:text-lg font-black uppercase tracking-wide">
                   Metro Flex <span className="text-gold-gradient">Gym</span>
                 </span>
@@ -131,12 +131,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
               ))}
             </nav>
-            <div className="flex items-center gap-3">
+            <div className="flex shrink-0 items-center gap-3">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gold px-4 py-3 font-display text-xs md:text-sm font-extrabold uppercase tracking-wider text-ink transition-all hover:-translate-y-0.5 hover:bg-gold-bright focus:outline-none focus:ring-2 focus:ring-gold-bright"
+                className="hidden bg-gold px-4 py-3 font-display text-xs md:text-sm font-extrabold uppercase tracking-wider text-ink transition-all hover:-translate-y-0.5 hover:bg-gold-bright focus:outline-none focus:ring-2 focus:ring-gold-bright md:inline-block"
               >
                 Join on WhatsApp
               </a>
