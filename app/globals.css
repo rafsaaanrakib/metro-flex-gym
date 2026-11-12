@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
+
+body {
+  background-color: #0a0a0b;
+  color: #ecece6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #e0a82e;
+  color: #0a0a0b;
+}
+
+/* Gold gradient text sampled from the client logo (#F6C730 -> #C98535) */
+.text-gold-gradient {
+  background: linear-gradient(100deg, #f6c730 0%, #e0a82e 45%, #c98535 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Slow hero ken-burns (disabled for reduced motion below) */
+@keyframes hero-zoom {
+  from { transform: scale(1.06); }
+  to { transform: scale(1); }
+}
+.animate-hero-zoom {
+  animation: hero-zoom 2.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-hero-zoom {
+    animation: none;
+  }
+}
