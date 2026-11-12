@@ -1,5 +1,19 @@
 import type { Metadata, Viewport } from 'next';
-import { Archivo, Inter } from 'next/font/google';
+// Self-hosted fonts (Fontsource) — the build must not fetch from Google
+// Fonts at build time: Cloudflare's build container returns a response
+// the next/font/google loader cannot parse, so `next build` crashes.
+// These local woff2 files bundle into the build instead.
+import '@fontsource/archivo/latin-400.css';
+import '@fontsource/archivo/latin-500.css';
+import '@fontsource/archivo/latin-600.css';
+import '@fontsource/archivo/latin-700.css';
+import '@fontsource/archivo/latin-800.css';
+import '@fontsource/archivo/latin-900.css';
+import '@fontsource/inter/latin-300.css';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-700.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
@@ -7,20 +21,6 @@ import { WhatsAppFloat, WHATSAPP_URL, WHATSAPP_DISPLAY, CALL_DISPLAY, FACEBOOK_U
 import { MobileMenu } from '@/components/MobileMenu';
 import { OpenNow } from '@/components/OpenNow';
 import { ScrollProgress } from '@/components/ScrollProgress';
-
-const archivo = Archivo({
-  subsets: ['latin'],
-  weight: ['500', '600', '700', '800', '900'],
-  variable: '--font-archivo',
-  display: 'swap',
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://metroflexgym.com.bd'),
@@ -98,7 +98,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${archivo.variable} ${inter.variable}`}>
+    <html lang="en">
       <head>
         <script
           type="application/ld+json"
