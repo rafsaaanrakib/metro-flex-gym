@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal, SectionHeading } from '@/components/Reveal';
 import { WhatsAppButton, CallButton, LADIES_WHATSAPP_URL, MAPS_URL, ADDRESS } from '@/components/Contact';
@@ -7,12 +8,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Ladies Gym in Agrabad — Metro Flex Gym (Ladies-Only Hours)',
   description:
-    'Ladies-only gym hours in Agrabad, Chattogram: 2:30–5:30 PM daily with a female trainer facility. 4,100 sq ft gym, open 8:30 AM–11 PM, 7 days.',
+    'Ladies-only gym hours in Agrabad, Chattogram: 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym, open Sat–Thu 7 AM–11 PM, Fri 5–9 PM.',
   alternates: { canonical: 'https://metroflexgym.com.bd/ladies' },
   openGraph: {
     title: 'Ladies Gym in Agrabad — Metro Flex Gym (Ladies-Only Hours)',
     description:
-      'Ladies-only gym hours in Agrabad: 2:30–5:30 PM daily with a female trainer facility. 4,100 sq ft gym in Agrabad, Chattogram.',
+      'Ladies-only gym hours in Agrabad: 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym in Agrabad, Chattogram.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/ladies',
     siteName: 'Metro Flex Gym',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ladies Gym in Agrabad — Metro Flex Gym (Ladies-Only Hours)',
     description:
-      'Ladies-only gym hours in Agrabad: 2:30–5:30 PM daily with a female trainer facility. 4,100 sq ft gym in Agrabad, Chattogram.',
+      'Ladies-only gym hours in Agrabad: 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym in Agrabad, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -48,8 +49,8 @@ export default function Ladies() {
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
             Every afternoon the floor belongs to the ladies. A dedicated ladies-only
-            slot, a female trainer facility, and the whole 4,100 sq ft gym to train
-            in — in Agrabad, seven days a week.
+            slot, a female trainer facility, and the whole 4,200 sq ft gym to train
+            in — in Agrabad, Saturday to Thursday (Friday 5–9 PM).
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <WhatsAppButton label="Ask about ladies' hours" href={LADIES_WHATSAPP_URL} />
@@ -69,12 +70,26 @@ export default function Ladies() {
             </p>
             <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-bone/90">
               Only ladies on the floor, 2:30 PM to 5:30 PM, every single day — with
-              a female trainer facility. The gym itself is open 8:30 AM to 11:00 PM,
-              seven days a week.
+              a female trainer facility. The gym itself is open Saturday to Thursday,
+              7:00 AM to 11:00 PM, with Friday 5:00–9:00 PM (optional service).
             </p>
             <p className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted">
               <OpenNow />
             </p>
+            <figure className="mt-10 max-w-2xl overflow-hidden">
+              <Image
+                src="/images/gallery-ladies-yoga.webp"
+                alt="Ladies yoga session at Metro Flex Gym"
+                width={864}
+                height={1536}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="aspect-[9/12] w-full object-cover"
+                loading="lazy"
+              />
+              <figcaption className="mt-3 text-xs uppercase tracking-[0.25em] text-muted">
+                Ladies yoga session on the gym floor
+              </figcaption>
+            </figure>
           </Reveal>
         </div>
       </section>
@@ -85,20 +100,25 @@ export default function Ladies() {
         <div className="max-w-3xl">
           <Reveal>
             <div className="divide-y divide-white/10 border-y border-white/10">
+              <div className="flex flex-wrap items-baseline justify-between gap-2 py-5">
+                <span className="font-display text-xl md:text-2xl font-extrabold">7:00 AM – 2:30 PM</span>
+                <span className="text-xs uppercase tracking-[0.2em] text-muted">Combined Gents &amp; Ladies</span>
+              </div>
               <div className="flex flex-wrap items-baseline justify-between gap-2 border border-gold/50 bg-gold/10 px-4 py-5">
                 <span className="font-display text-xl md:text-2xl font-extrabold text-gold">2:30 PM – 5:30 PM</span>
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-gold">Only Ladies ★</span>
               </div>
               <div className="flex flex-wrap items-baseline justify-between gap-2 py-5">
-                <span className="font-display text-xl md:text-2xl font-extrabold">5:30 PM – 9:00 PM</span>
+                <span className="font-display text-xl md:text-2xl font-extrabold">5:30 PM – 9:30 PM</span>
                 <span className="text-xs uppercase tracking-[0.2em] text-muted">Combined Gents &amp; Ladies</span>
               </div>
             </div>
             <p className="mt-6 text-base leading-relaxed text-muted">
               The ladies-only slot runs every afternoon. After 5:30 PM the floor is
-              combined gents and ladies until 9:00 PM, and the gym stays open until
-              11:00 PM. A female trainer facility is available, and a trainer is on
-              the floor at all times.
+              combined gents and ladies until 9:30 PM, then gents only until 11:00 PM.
+              On Friday the gym runs an optional combined session, 5:00–9:00 PM. A
+              female trainer facility is available, and a trainer is on the floor at
+              all times.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted">
               Which programs run inside the ladies-only slot, and whether ladies&apos;
@@ -115,12 +135,12 @@ export default function Ladies() {
           <SectionHeading index="03" label="What to expect" title={<>On the floor<br />with you.</>} />
           <div className="grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { n: '01', title: 'The whole floor', text: 'A 4,100 sq ft floor — free weights, cardio section, machines and a steam bath, all in one place.' },
+              { n: '01', title: 'The whole floor', text: 'A 4,200 sq ft floor — free weights, cardio section, machines and a steam bath, all in one place.' },
               { n: '02', title: 'A female trainer', text: 'A female trainer facility, and a trainer on the floor at all times to guide you.' },
               { n: '03', title: 'Lockers & cafe', text: 'Locker facility, food cafe, AC, lift, parking and Wi-Fi throughout the building.' },
               { n: '04', title: 'What to bring', text: 'Comfortable clothes and training shoes. Anything else — ask on WhatsApp before you come.' },
               { n: '05', title: 'First time here?', text: 'Come and look around first. Message on WhatsApp to arrange your first visit.' },
-              { n: '06', title: 'Where to find us', text: 'Amin Tower, Lift 7, Agrabad Access Rd, Bepari Para, Chattogram. Open 8:30 AM – 11:00 PM, 7 days.' },
+              { n: '06', title: 'Where to find us', text: 'Amin Tower, Lift 7, Agrabad Access Rd, Bepari Para, Chattogram. Open Sat–Thu 7 AM–11 PM, Fri 5–9 PM.' },
             ].map((c, i) => (
               <Reveal key={c.n} delay={(i % 3) * 0.06} className="bg-ink">
                 <article className="h-full p-7 transition-colors hover:bg-surface md:p-8">

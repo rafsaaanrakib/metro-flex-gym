@@ -62,7 +62,12 @@ export default function Faq() {
                   <span aria-hidden="true" className="shrink-0 font-body text-2xl font-light text-gold transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-                  Open 8:30 AM to 11:00 PM, seven days a week.
+                  Open Saturday to Thursday, 7:00 AM to 11:00 PM. Friday 5:00–9:00 PM
+                  (optional service). See the{' '}
+                  <Link href="/opening-hours" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                    Opening Hours page
+                  </Link>{' '}
+                  for the full detail.
                 </p>
               </details>
 
@@ -74,7 +79,7 @@ export default function Faq() {
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
                   Every afternoon, 2:30 PM to 5:30 PM, the floor is ladies only,
                   with a female trainer facility. After 5:30 PM the sessions are
-                  combined gents and ladies until 9:00 PM. See the{' '}
+                  combined gents and ladies until 9:30 PM. See the{' '}
                   <Link href="/ladies" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                     Ladies page
                   </Link>{' '}
@@ -89,16 +94,36 @@ export default function Faq() {
                 </summary>
                 <div className="mt-4 max-w-2xl">
                   <p className="text-base leading-relaxed text-muted">
-                    Membership starts at <span className="font-display font-extrabold text-gold">৳4,500</span> for
-                    1 month without a steam bath. There are 9 packages, from 1 month
-                    to 10 years, each with or without steam bath. No admission fee.
-                    15% VAT applies. See{' '}
+                    Membership starts at <span className="font-display font-extrabold text-gold">৳4,000</span> with the
+                    Winter Offer (regular ৳4,500) for 1 month without a steam bath. There are
+                    9 packages, from 1 month to 10 years, each with or without steam bath.
+                    No admission fee. 15% VAT applies. See the{' '}
+                    <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                      Winter Offer
+                    </Link>{' '}
+                    and{' '}
                     <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                       Membership &amp; Payment
                     </Link>{' '}
                     for the full rate card.
                   </p>
                 </div>
+              </details>
+
+              <details className="group py-6">
+                <summary className="flex cursor-pointer list-none items-baseline justify-between gap-4 font-display text-xl md:text-2xl font-extrabold uppercase leading-tight marker:hidden [&::-webkit-details-marker]:hidden">
+                  Is there a student membership?
+                  <span aria-hidden="true" className="shrink-0 font-body text-2xl font-light text-gold transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+                  Yes — HSC-level students with a valid student ID card: admission
+                  ৳3,000 and ৳3,000 per month. No steam bath included (৳300 per
+                  steam). 15% VAT applies. See the{' '}
+                  <Link href="/student-membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                    Student Membership page
+                  </Link>{' '}
+                  for the full detail.
+                </p>
               </details>
 
               <details className="group py-6">
@@ -170,10 +195,14 @@ export default function Faq() {
                   <span aria-hidden="true" className="shrink-0 font-body text-2xl font-light text-gold transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-                  Yes — the gym has a female trainer facility, and the ladies-only
-                  slot runs every afternoon, 2:30 PM to 5:30 PM. The gym has not
-                  shared the trainer&apos;s name yet; ask on WhatsApp and they
-                  will confirm it.
+                  Yes — the gym has 8 trainers: 6 male and 2 female. The ladies-only
+                  slot runs every afternoon, 2:30 PM to 5:30 PM, with a female trainer.
+                  The gym has not shared the trainers&apos; names yet; ask on WhatsApp
+                  and they will confirm it. See the{' '}
+                  <Link href="/trainers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                    Trainers page
+                  </Link>{' '}
+                  for the full detail.
                 </p>
               </details>
 

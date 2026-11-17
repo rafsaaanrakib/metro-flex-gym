@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal, SectionHeading } from '@/components/Reveal';
-import { WhatsAppButton, CallButton, MAPS_URL, ADDRESS } from '@/components/Contact';
+import { WhatsAppButton, CallButton, FacebookButton, MAPS_URL, ADDRESS } from '@/components/Contact';
 import { OpenNow } from '@/components/OpenNow';
 import { POPULAR_PACKAGES } from '@/lib/pricing';
 
@@ -11,15 +11,16 @@ import { POPULAR_PACKAGES } from '@/lib/pricing';
 /* ------------------------------------------------------------------ */
 
 const FACILITIES = [
-  'World Class Equipments',
-  'Big Space — 4,100 sq ft',
+  'Commercial Gym Equipment (Impulse & Real Leader)',
+  'Big Space — 4,200 sq ft',
   'Strong Cardio Section',
   'Steam Bath',
   'Food Cafe',
+  'Prayer Facilities inside the Gym',
   'Locker Facility',
   'All Time Trainer Facility',
   'Female Trainer Facility',
-  '7 Days Open',
+  'Open 7 Days — Fri 5–9 PM',
   'Custom Training & Diet Routine',
   'All Types of Authentic Supplements',
   'One-on-One Consultancy',
@@ -38,8 +39,8 @@ const PROGRAMS = [
 /* Real membership prices live in lib/pricing.ts (gym's rate card). */
 
 const GALLERY = [
-  { src: '/images/gallery-group.webp', alt: 'Members of Metro Flex Gym together on the gym floor', caption: 'The Metro Flex community', w: 1200, h: 675 },
-  { src: '/images/gallery-team.webp', alt: 'Members posing together inside Metro Flex Gym', caption: 'Members on the floor', w: 1200, h: 900 },
+  { src: '/images/gallery-group-new.webp', alt: 'Members of Metro Flex Gym together on the gym floor', caption: 'The Metro Flex community', w: 1200, h: 900 },
+  { src: '/images/gallery-ladies-yoga.webp', alt: 'Ladies yoga session at Metro Flex Gym', caption: 'Ladies yoga session', w: 864, h: 1536 },
   { src: '/images/gallery-dumbbells.webp', alt: 'Dumbbell rack at Metro Flex Gym with Ironbull dumbbells', caption: 'Dumbbell rack', w: 960, h: 960 },
   { src: '/images/gallery-cardio.webp', alt: 'Cardio zone at Metro Flex Gym — treadmills and spin bikes', caption: 'Cardio zone', w: 1200, h: 900 },
   { src: '/images/gallery-weights.webp', alt: 'Free weights area at Metro Flex Gym', caption: 'Free weights area', w: 1080, h: 810 },
@@ -78,12 +79,13 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <WhatsAppButton />
+            <FacebookButton />
             <CallButton />
           </div>
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/15 pt-5 text-sm text-muted">
             <OpenNow />
             <span aria-hidden="true" className="hidden text-gold sm:inline">✦</span>
-            <span>8:30 AM – 11:00 PM · 7 days</span>
+            <span>7:00 AM – 11:00 PM · Sat–Thu, Fri 5–9 PM</span>
             <span aria-hidden="true" className="hidden text-gold sm:inline">✦</span>
             <span>Gents &amp; Ladies</span>
           </div>
@@ -96,15 +98,21 @@ export default function Home() {
         <div className="grid gap-10 md:grid-cols-2 md:gap-14">
           <Reveal>
             <p className="text-lg md:text-xl leading-relaxed text-bone/90">
-              Metro Flex Gym is a 4,100 sq ft fitness floor in Amin Tower, Agrabad —
-              built for both men and women, open seven days a week, with a trainer on
-              the floor at all times.
+              Metro Flex Gym is a 4,200 sq ft fitness floor in Amin Tower, Agrabad —
+              built for both men and women, open Saturday to Thursday, 7 AM–11 PM
+              (Friday 5–9 PM), with a trainer on the floor at all times.
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted">
-              World-class equipment, a strong cardio section, steam bath, food cafe and
+              Commercial gym equipment (Impulse & Real Leader), a strong cardio section, steam bath, food cafe and
               lockers — everything in one place, so you can train, recover and get on
               with your day. Ladies train in a dedicated afternoon slot with a female
               trainer available.
+            </p>
+            <p className="mt-5 text-base leading-relaxed text-muted">
+              8 trainers on the floor — 6 male, 2 female.{' '}
+              <Link href="/trainers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Meet the trainers →
+              </Link>
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -191,7 +199,8 @@ export default function Home() {
           <SectionHeading index="04" label="Schedule" title={<>Hours that<br />fit your day.</>} />
           <Reveal>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted">
-              Open 8:30 AM to 11:00 PM, seven days a week. Sessions are organised for
+              Open Saturday to Thursday, 7:00 AM to 11:00 PM — Friday 5:00–9:00 PM
+              (optional service). Sessions are organised for
               gents and ladies — including a dedicated ladies-only slot every afternoon.
             </p>
           </Reveal>
@@ -202,7 +211,7 @@ export default function Home() {
               </h3>
               <div className="mt-5 divide-y divide-white/10 border-y border-white/10">
                 {[
-                  { time: '8:30 AM – 2:30 PM', note: 'Combined Gents & Ladies' },
+                  { time: '7:00 AM – 2:30 PM', note: 'Combined Gents & Ladies' },
                   { time: '5:30 PM – 9:30 PM', note: 'Combined Gents & Ladies' },
                   { time: '9:30 PM – 11:00 PM', note: 'Only Gents' },
                 ].map((row) => (
@@ -223,7 +232,7 @@ export default function Home() {
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-gold">Only Ladies ★</span>
                 </div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2 py-4">
-                  <span className="font-display text-xl md:text-2xl font-extrabold">5:30 PM – 9:00 PM</span>
+                  <span className="font-display text-xl md:text-2xl font-extrabold">5:30 PM – 9:30 PM</span>
                   <span className="text-xs uppercase tracking-[0.2em] text-muted">Combined Gents &amp; Ladies</span>
                 </div>
               </div>
@@ -233,6 +242,18 @@ export default function Home() {
               </p>
             </Reveal>
           </div>
+          <Reveal delay={0.15}>
+            <p className="mt-10 text-sm leading-relaxed text-muted">
+              Friday runs an optional combined session, 5:00–9:00 PM.{' '}
+              <Link href="/schedule" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Full schedule →
+              </Link>{' '}
+              ·{' '}
+              <Link href="/opening-hours" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Opening hours →
+              </Link>
+            </p>
+          </Reveal>
         </div>
       </section>
 
@@ -242,7 +263,8 @@ export default function Home() {
           <SectionHeading index="05" label="Pricing" title={<>Simple plans.<br />No surprises.</>} />
           <Reveal>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted">
-              From 1 month to 10 years — each package with or without steam bath.
+              Winter Offer prices now — the crossed-out price is the regular price.
+              From 1 month to 10 years, with or without steam bath.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -254,12 +276,16 @@ export default function Home() {
                   <dl className="mt-5 space-y-3 border-t border-white/10 pt-5 text-sm">
                     <div className="flex items-baseline justify-between gap-3">
                       <dt className="text-muted">Without steam</dt>
-                      <dd className="font-display text-xl font-black text-gold">{p.without}</dd>
+                      <dd className="text-right">
+                        <span className="font-display text-xl font-black text-gold">{p.withoutOffer}</span>
+                        <span className="ml-2 text-sm text-muted line-through">{p.withoutRegular}</span>
+                      </dd>
                     </div>
                     <div className="flex items-baseline justify-between gap-3">
                       <dt className="text-muted">With steam</dt>
                       <dd className="text-right font-display text-xl font-black leading-tight text-gold">
-                        {p.withSteam}
+                        {p.withSteamOffer}
+                        <span className="ml-2 text-sm font-bold text-muted line-through">{p.withSteamRegular}</span>
                         <span className="block text-xs font-bold text-muted">({p.steamBaths} steam baths)</span>
                       </dd>
                     </div>
@@ -270,9 +296,18 @@ export default function Home() {
           </div>
           <Reveal delay={0.1}>
             <p className="mt-8 text-sm text-muted">
+              <span className="font-semibold text-gold">❄ Winter Offer</span> — discounted prices above, regular prices crossed out.{' '}
               No admission fee · 15% VAT applies.{' '}
               <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 See all 9 packages →
+              </Link>{' '}
+              ·{' '}
+              <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Winter Offer →
+              </Link>{' '}
+              ·{' '}
+              <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Regular prices →
               </Link>
             </p>
           </Reveal>
@@ -285,7 +320,7 @@ export default function Home() {
         <div className="grid gap-px bg-white/10 md:grid-cols-3">
           {[
             { q: 'What are the ladies-only hours?', a: '2:30–5:30 PM daily, with a female trainer facility.' },
-            { q: 'What does membership cost?', a: 'Starts at ৳4,500 for 1 month, no admission fee, 15% VAT applies.' },
+            { q: 'What does membership cost?', a: 'Starts at ৳4,000 with the Winter Offer (regular ৳4,500), no admission fee, 15% VAT applies.' },
             { q: 'Where exactly are you?', a: 'Amin Tower, Lift 7, Agrabad Access Rd, Chattogram.' },
           ].map((item, i) => (
             <Reveal key={item.q} delay={i * 0.06} className="bg-ink">
@@ -301,7 +336,7 @@ export default function Home() {
         <Reveal delay={0.1}>
           <p className="mt-8">
             <Link href="/faq" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              See all 10 questions →
+              See all 11 questions →
             </Link>
           </p>
         </Reveal>
@@ -330,6 +365,13 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
+        <Reveal delay={0.1}>
+          <p className="mt-8">
+            <Link href="/gallery" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+              See the full gallery →
+            </Link>
+          </p>
+        </Reveal>
       </section>
 
       {/* ------------------------------------------------ 08 · LOCATION */}
@@ -366,11 +408,11 @@ export default function Home() {
               <dl className="mt-8 space-y-3 border-t border-white/10 pt-6 text-sm">
                 <div className="flex justify-between gap-4">
                   <dt className="text-muted">Open</dt>
-                  <dd className="font-semibold">8:30 AM – 11:00 PM</dd>
+                  <dd className="font-semibold">7:00 AM – 11:00 PM</dd>
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt className="text-muted">Days</dt>
-                  <dd className="font-semibold">7 days a week</dd>
+                  <dd className="font-semibold">Sat–Thu · Fri 5–9 PM</dd>
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt className="text-muted">Ladies only</dt>
@@ -399,6 +441,7 @@ export default function Home() {
             </h2>
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <WhatsAppButton />
+              <FacebookButton />
               <CallButton />
             </div>
             <p className="mt-8 text-sm">

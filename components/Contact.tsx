@@ -5,8 +5,11 @@ export const WHATSAPP_URL =
 /** Pre-filled WhatsApp link for the Ladies page. */
 export const LADIES_WHATSAPP_URL =
   'https://wa.me/8801715266172?text=Hi%20Metro%20Flex%20Gym%2C%20I%20have%20a%20question%20about%20the%20ladies-only%20hours';
-export const CALL_NUMBER = '01819630154';
-export const CALL_DISPLAY = '01819-630154';
+/** The gym's call number is the main number, +880 1715-266172.
+ * The old second number 01819-630154 was removed 2026-11-18 at the
+ * gym's request — it must not appear anywhere on the site. */
+export const CALL_NUMBER = '8801715266172';
+export const CALL_DISPLAY = '+880 1715-266172';
 export const FACEBOOK_URL = 'https://facebook.com/M.flexgym';
 export const MAPS_URL = 'https://maps.app.goo.gl/3e4QB8Xzyi5P57Nd6';
 export const ADDRESS =
@@ -64,6 +67,28 @@ export function CallButton({ className = '' }: { className?: string }) {
       className={`inline-flex items-center justify-center gap-2 border border-bone/40 px-6 py-3.5 font-display text-sm font-extrabold uppercase tracking-wider text-bone transition-all hover:-translate-y-0.5 hover:border-gold hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink ${className}`}
     >
       Call {CALL_DISPLAY}
+    </a>
+  );
+}
+
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073Z" />
+    </svg>
+  );
+}
+
+export function FacebookButton({ className = '' }: { className?: string }) {
+  return (
+    <a
+      href={FACEBOOK_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center justify-center gap-2 border border-bone/40 px-6 py-3.5 font-display text-sm font-extrabold uppercase tracking-wider text-bone transition-all hover:-translate-y-0.5 hover:border-gold hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink ${className}`}
+    >
+      <FacebookIcon className="h-5 w-5" />
+      Facebook
     </a>
   );
 }

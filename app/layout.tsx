@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://metroflexgym.com.bd'),
   title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad, Chattogram',
   description:
-    '4,100 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,500. Join on WhatsApp.',
+    '4,200 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
   keywords: ['gym Chattogram', 'gym Agrabad', 'fitness center Chattogram', 'Metro Flex Gym', 'ladies gym Chattogram', 'gym Bangladesh'],
   alternates: { canonical: 'https://metroflexgym.com.bd' },
   icons: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad, Chattogram',
     description:
-      '4,100 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,500. Join on WhatsApp.',
+      '4,200 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
     type: 'website',
     locale: 'en_BD',
     url: 'https://metroflexgym.com.bd',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad, Chattogram',
     description:
-      '4,100 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,500. Join on WhatsApp.',
+      '4,200 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -59,8 +59,8 @@ export const viewport: Viewport = {
 const NAV = [
   { href: '/#about', label: 'The Gym' },
   { href: '/ladies', label: 'Ladies' },
-  { href: '/#schedule', label: 'Schedule' },
-  { href: '/#pricing', label: 'Pricing' },
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/offers', label: 'Offers' },
   { href: '/faq', label: 'FAQ' },
   { href: '/membership', label: 'Membership' },
 ];
@@ -83,15 +83,21 @@ const jsonLd = {
   telephone: '+8801715266172',
   url: 'https://metroflexgym.com.bd',
   image: 'https://metroflexgym.com.bd/images/hero.webp',
-  priceRange: 'BDT 4,500 - BDT 325,000',
-  openingHours: 'Mo-Su 08:30-23:00',
+  priceRange: 'BDT 4,000 - BDT 300,000',
+  openingHours: 'Sa-Th 07:00-23:00, Fr 17:00-21:00',
   sameAs: ['https://www.facebook.com/M.flexgym'],
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '08:30',
+      dayOfWeek: ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+      opens: '07:00',
       closes: '23:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Friday'],
+      opens: '17:00',
+      closes: '21:00',
     },
   ],
 };
@@ -162,9 +168,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <h3 className="font-display text-sm font-extrabold uppercase tracking-[0.25em] text-gold">Pages</h3>
               <ul className="mt-4 space-y-2.5 text-sm text-bone/85">
                 <li><Link href="/" className="inline-block py-1 hover:text-gold">Home</Link></li>
-                <li><Link href="/ladies" className="inline-block py-1 hover:text-gold">Ladies / For Women</Link></li>
-                <li><Link href="/faq" className="inline-block py-1 hover:text-gold">FAQ</Link></li>
                 <li><Link href="/membership" className="inline-block py-1 hover:text-gold">Membership &amp; Payment</Link></li>
+                <li><Link href="/regular-price" className="inline-block py-1 hover:text-gold">Regular Price</Link></li>
+                <li><Link href="/offers" className="inline-block py-1 hover:text-gold">Winter Offer</Link></li>
+                <li><Link href="/student-membership" className="inline-block py-1 hover:text-gold">Student Membership</Link></li>
+                <li><Link href="/ladies" className="inline-block py-1 hover:text-gold">Ladies / For Women</Link></li>
+                <li><Link href="/trainers" className="inline-block py-1 hover:text-gold">Trainers</Link></li>
+                <li><Link href="/gallery" className="inline-block py-1 hover:text-gold">Gallery</Link></li>
+                <li><Link href="/opening-hours" className="inline-block py-1 hover:text-gold">Opening Hours</Link></li>
+                <li><Link href="/schedule" className="inline-block py-1 hover:text-gold">Schedule</Link></li>
+                <li><Link href="/owner" className="inline-block py-1 hover:text-gold">Owner</Link></li>
+                <li><Link href="/faq" className="inline-block py-1 hover:text-gold">FAQ</Link></li>
               </ul>
             </div>
             <div>
@@ -173,9 +187,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {ADDRESS}
               </address>
               <p className="mt-4 text-sm text-muted">
-                Open 8:30 AM – 11:00 PM
+                Open Sat–Thu 7:00 AM – 11:00 PM
                 <br />
-                7 days a week
+                Friday 5:00 – 9:00 PM
               </p>
               <a
                 href={MAPS_URL}
@@ -194,7 +208,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   {WHATSAPP_DISPLAY}
                 </a>
                 <br />
-                Call: <a href="tel:+8801819630154" className="hover:text-gold">{CALL_DISPLAY}</a>
+                Call: <a href="tel:+8801715266172" className="hover:text-gold">{CALL_DISPLAY}</a>
                 <br />
                 Facebook:{' '}
                 <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
