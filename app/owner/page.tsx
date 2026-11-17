@@ -7,28 +7,28 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Owner — MD Nasimul Haque Liton | Metro Flex Gym Agrabad',
   description:
-    'MD Nasimul Haque Liton, proprietor of Metro Flex Gym in Agrabad, Chattogram.',
+    'MD Nasimul Haque Liton, Founder & Owner of Metro Flex Gym in Agrabad, Chattogram.',
   alternates: { canonical: 'https://metroflexgym.com.bd/owner' },
   openGraph: {
     title: 'Owner — MD Nasimul Haque Liton | Metro Flex Gym Agrabad',
     description:
-      'MD Nasimul Haque Liton, proprietor of Metro Flex Gym in Agrabad, Chattogram.',
+      'MD Nasimul Haque Liton, Founder & Owner of Metro Flex Gym in Agrabad, Chattogram.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/owner',
     siteName: 'Metro Flex Gym',
-    images: [{ url: 'https://metroflexgym.com.bd/images/owner.webp', width: 800, height: 999, alt: 'MD Nasimul Haque Liton, proprietor of Metro Flex Gym' }],
+    images: [{ url: 'https://metroflexgym.com.bd/images/owner.webp', width: 800, height: 999, alt: 'MD Nasimul Haque Liton, Founder & Owner of Metro Flex Gym' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Owner — MD Nasimul Haque Liton | Metro Flex Gym Agrabad',
     description:
-      'MD Nasimul Haque Liton, proprietor of Metro Flex Gym in Agrabad, Chattogram.',
+      'MD Nasimul Haque Liton, Founder & Owner of Metro Flex Gym in Agrabad, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/owner.webp'],
   },
 };
 
-/* Owner facts only: name and role from the gym's trade licence and
- * receipt (2026-11-12). No invented biography. */
+/* Owner facts only: name from the gym's trade licence and receipt
+ * (2026-11-12); title Founder & Owner per the gym. No invented biography. */
 
 export default function Owner() {
   return (
@@ -53,7 +53,7 @@ export default function Owner() {
             <figure className="overflow-hidden">
               <Image
                 src="/images/owner.webp"
-                alt="MD Nasimul Haque Liton, proprietor of Metro Flex Gym"
+                alt="MD Nasimul Haque Liton, Founder & Owner of Metro Flex Gym"
                 width={800}
                 height={999}
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -63,10 +63,10 @@ export default function Owner() {
             </figure>
           </Reveal>
           <Reveal delay={0.1}>
-            <SectionHeading index="01" label="Proprietor" title={<>MD Nasimul<br />Haque Liton.</>} />
+            <SectionHeading index="01" label="Founder & Owner" title={<>MD Nasimul<br />Haque Liton.</>} />
             <p className="mt-6 text-lg md:text-xl leading-relaxed text-bone/90">
-              Metro Flex Gym is owned and run by its proprietor, MD Nasimul Haque
-              Liton — a gents &amp; ladies gym in Agrabad, Chattogram.
+              MD Nasimul Haque Liton is the Founder &amp; Owner of Metro Flex Gym —
+              a gents &amp; ladies gym in Agrabad, Chattogram.
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted">
               The gym runs on commercial equipment (Impulse &amp; Real Leader), with

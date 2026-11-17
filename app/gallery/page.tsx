@@ -27,10 +27,15 @@ export const metadata: Metadata = {
   },
 };
 
-/* Real gym photos only — the 5 new photos from the gym (2026-11-18)
- * plus the 5 photos already on the site. No stock photos. */
+/* Real gym photos only — 15 photos: 5 more from the gym (2026-11-18,
+ * second batch) plus the 10 already on the site. No stock photos. */
 
 const PHOTOS = [
+  { src: '/images/gallery-group-men-2.webp', alt: 'Members of Metro Flex Gym posing together on the gym floor', caption: 'Members on the gym floor', w: 1200, h: 900 },
+  { src: '/images/gallery-prayer.webp', alt: 'Members praying inside Metro Flex Gym', caption: 'Prayer inside the gym', w: 900, h: 1200 },
+  { src: '/images/gallery-ladies-cakes.webp', alt: 'Ladies members of Metro Flex Gym together with cakes', caption: 'Ladies members together', w: 1200, h: 900 },
+  { src: '/images/gallery-ladies-cafe.webp', alt: 'Ladies members relaxing at the gym food cafe', caption: 'At the food cafe', w: 1200, h: 900 },
+  { src: '/images/gallery-building.webp', alt: 'Metro Flex Gym in Amin Tower on Agrabad Access Road', caption: 'Amin Tower, Agrabad', w: 900, h: 1200 },
   { src: '/images/gallery-group-new.webp', alt: 'Members of Metro Flex Gym together on the gym floor', caption: 'The Metro Flex community', w: 1200, h: 900 },
   { src: '/images/gallery-ladies-yoga.webp', alt: 'Ladies yoga session at Metro Flex Gym', caption: 'Ladies yoga session', w: 864, h: 1536 },
   { src: '/images/gallery-ladies-yoga-2.webp', alt: 'Ladies yoga stretch session at Metro Flex Gym', caption: 'Ladies yoga — stretch session', w: 900, h: 1600 },

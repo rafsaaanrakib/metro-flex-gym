@@ -111,8 +111,7 @@ export default function Membership() {
           </p>
         </Reveal>
         <Reveal>
-          <p className="mt-3 text-xs text-muted sm:hidden">Swipe sideways to see all prices →</p>
-          <div className="overflow-x-auto border border-white/10">
+          <div className="hidden border border-white/10 md:block">
             <table className="w-full min-w-[640px] text-left text-sm">
               <thead>
                 <tr className="border-b border-white/10 bg-surface font-display text-xs font-extrabold uppercase tracking-[0.2em] text-gold">
@@ -136,6 +135,33 @@ export default function Membership() {
                 ))}
               </tbody>
             </table>
+          </div>
+          <div className="grid gap-px bg-white/10 md:hidden">
+            {PACKAGES.map((p) => (
+              <article key={p.name} className="bg-ink p-5">
+                <div className="flex items-baseline justify-between gap-3">
+                  <h3 className="font-display text-lg font-black uppercase">{p.name}</h3>
+                  <span className="text-sm text-muted">{p.duration}</span>
+                </div>
+                <div className="mt-4 space-y-3">
+                  <div className="flex items-baseline justify-between gap-3 border-t border-white/10 pt-3">
+                    <span className="text-xs uppercase tracking-[0.2em] text-muted">Without steam</span>
+                    <span className="text-right">
+                      <span className="font-display text-lg font-black text-gold">{p.withoutOffer}</span>{' '}
+                      <span className="text-sm text-muted line-through">{p.withoutRegular}</span>
+                    </span>
+                  </div>
+                  <div className="flex items-baseline justify-between gap-3 border-t border-white/10 pt-3">
+                    <span className="text-xs uppercase tracking-[0.2em] text-muted">With steam</span>
+                    <span className="text-right">
+                      <span className="font-display text-lg font-black text-gold">{p.withSteamOffer}</span>{' '}
+                      <span className="text-sm text-muted line-through">{p.withSteamRegular}</span>
+                      <span className="block text-xs text-muted">({p.steamBaths} steam baths)</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </Reveal>
         <Reveal delay={0.1}>
