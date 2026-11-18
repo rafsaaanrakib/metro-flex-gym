@@ -158,7 +158,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <Image src="/images/logo.webp" alt="Metro Flex Gym logo" width={96} height={135} className="h-32 w-auto" loading="lazy" />
               <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
-                A Place of Perfect Fitness. Gents &amp; ladies gym in Agrabad, Chattogram.
+                A Place of Perfect Fitness. Gents &amp; ladies gym in Agrabad Access Road, Chattogram.
               </p>
               <p className="mt-4">
                 <OpenNow />
@@ -227,7 +227,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <div className="border-t border-white/10 py-5">
             <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 text-xs text-muted md:px-8">
-              <p>© {new Date().getFullYear()} Metro Flex Gym — Agrabad, Chattogram. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Metro Flex Gym — Agrabad Access Road, Chattogram. All rights reserved.</p>
               <p>
                 Website by{' '}
                 <a href="https://rakibwebstudio.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-gold hover:text-gold-bright">

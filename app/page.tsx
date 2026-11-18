@@ -72,7 +72,7 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-32 md:px-8 md:pb-20">
           <p className="font-body text-[11px] md:text-xs tracking-[0.35em] uppercase text-gold">
-            Metro Flex Gym — Agrabad, Chattogram
+            Metro Flex Gym — Agrabad Access Road, Chattogram
           </p>
           <h1 className="mt-5 font-display font-black uppercase leading-[0.88] tracking-tight text-[clamp(3.5rem,19vw,7.5rem)]">
             Train
