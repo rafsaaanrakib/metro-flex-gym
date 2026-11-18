@@ -20,10 +20,16 @@ const FACILITIES = [
   'Locker Facility',
   'All Time Trainer Facility',
   'Female Trainer Facility',
-  'Open 7 Days — Fri 5–9 PM',
+  'Friday 5–9 PM — Optional Service',
   'Custom Training & Diet Routine',
   'All Types of Authentic Supplements',
   'One-on-One Consultancy',
+  'Full AC Facilities',
+  'Lift Facilities',
+  'Parking Facility',
+  'CCTV Monitoring',
+  'Fully Wi-Fi Zone',
+  'Sound Ambience',
 ];
 
 const PROGRAMS = [
@@ -85,7 +91,7 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/15 pt-5 text-sm text-muted">
             <OpenNow />
             <span aria-hidden="true" className="hidden text-gold sm:inline">✦</span>
-            <span>7:00 AM – 11:00 PM · Sat–Thu, Fri 5–9 PM</span>
+            <span>Sat–Thu, 7:00 AM – 11:00 PM · Fri 5–9 PM (optional service)</span>
             <span aria-hidden="true" className="hidden text-gold sm:inline">✦</span>
             <span>Gents &amp; Ladies</span>
           </div>
@@ -100,7 +106,7 @@ export default function Home() {
             <p className="text-lg md:text-xl leading-relaxed text-bone/90">
               Metro Flex Gym is a 4,200 sq ft fitness floor in Amin Tower, Agrabad —
               built for both men and women, open Saturday to Thursday, 7 AM–11 PM
-              (Friday 5–9 PM), with a trainer on the floor at all times.
+              (Friday 5–9 PM, optional service), with a trainer on the floor at all times.
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted">
               Commercial gym equipment (Impulse & Real Leader), a strong cardio section, steam bath, food cafe and
@@ -150,11 +156,6 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-          <Reveal delay={0.1}>
-            <p className="mt-8 text-sm leading-relaxed text-muted">
-              Plus AC, lift, parking, CCTV, Wi-Fi and sound throughout the floor.
-            </p>
-          </Reveal>
         </div>
       </section>
 
@@ -412,7 +413,7 @@ export default function Home() {
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt className="text-muted">Days</dt>
-                  <dd className="font-semibold">Sat–Thu · Fri 5–9 PM</dd>
+                  <dd className="font-semibold">Sat–Thu · Fri 5–9 PM (optional)</dd>
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt className="text-muted">Ladies only</dt>
