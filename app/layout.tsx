@@ -24,9 +24,9 @@ import { ScrollProgress } from '@/components/ScrollProgress';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://metroflexgym.com.bd'),
-  title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad, Chattogram',
+  title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad Access Road, Chattogram',
   description:
-    '4,200 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
+    '4,200 sq ft gym in Agrabad Access Road, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
   keywords: ['gym Chattogram', 'gym Agrabad', 'fitness center Chattogram', 'Metro Flex Gym', 'ladies gym Chattogram', 'gym Bangladesh'],
   alternates: { canonical: 'https://metroflexgym.com.bd' },
   icons: {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad, Chattogram',
+    title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad Access Road, Chattogram',
     description:
-      '4,200 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
+      '4,200 sq ft gym in Agrabad Access Road, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
     type: 'website',
     locale: 'en_BD',
     url: 'https://metroflexgym.com.bd',
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad, Chattogram',
+    title: 'Metro Flex Gym — Gents & Ladies Gym in Agrabad Access Road, Chattogram',
     description:
-      '4,200 sq ft gym in Agrabad, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
+      '4,200 sq ft gym in Agrabad Access Road, Chattogram. Ladies-only 2:30–5:30 PM daily. Membership from ৳4,000 with the Winter Offer. Join on WhatsApp.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
