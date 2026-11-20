@@ -27,10 +27,23 @@ export const metadata: Metadata = {
   },
 };
 
-/* Real gym photos only — 13 photos. The Dumbbell Rack and Cardio Zone
- * photos were removed 2026-11-20. No stock photos. */
+/* Real gym photos only — 25 photos. 12 new photos added 2026-11-20
+ * (gym floor + building at night). The Dumbbell Rack and Cardio Zone
+ * photos were removed the same day. No stock photos. */
 
 const PHOTOS = [
+  { src: '/images/gallery-spin-bikes.webp', alt: 'Members training on spin bikes at Metro Flex Gym', caption: 'Spin bikes', w: 1200, h: 899 },
+  { src: '/images/gallery-strength-machines.webp', alt: 'Strength machines on the gym floor at Metro Flex Gym', caption: 'Strength machines', w: 1200, h: 899 },
+  { src: '/images/gallery-treadmills.webp', alt: 'Members on treadmills and the stair climber at Metro Flex Gym', caption: 'Treadmills and cardio', w: 1200, h: 899 },
+  { src: '/images/gallery-impulse-machine.webp', alt: 'Impulse standing multi-flight machine at Metro Flex Gym', caption: 'Impulse machine', w: 1200, h: 900 },
+  { src: '/images/gallery-squat-rack.webp', alt: 'Squat rack and strength machines at Metro Flex Gym', caption: 'Squat rack', w: 1200, h: 900 },
+  { src: '/images/gallery-free-weights-machines.webp', alt: 'Free weights and strength machines at Metro Flex Gym', caption: 'Free weights and machines', w: 1200, h: 899 },
+  { src: '/images/gallery-gym-floor.webp', alt: 'The gym floor at Metro Flex Gym', caption: 'The gym floor', w: 1200, h: 899 },
+  { src: '/images/gallery-building-night.webp', alt: 'Metro Flex Gym building at night on Agrabad Access Road', caption: 'Metro Flex Gym at night', w: 1200, h: 899 },
+  { src: '/images/gallery-building-night-2.webp', alt: 'Metro Flex Gym sign lit up at night', caption: 'The gym, lit up', w: 1200, h: 899 },
+  { src: '/images/gallery-building-night-3.webp', alt: 'Metro Flex Gym at night in Agrabad, Chattogram', caption: 'Metro Flex Gym, Agrabad', w: 1200, h: 900 },
+  { src: '/images/gallery-building-night-4.webp', alt: 'Amin Tower at night, home of Metro Flex Gym', caption: 'Amin Tower at night', w: 1200, h: 900 },
+  { src: '/images/gallery-building-night-5.webp', alt: 'The Metro Flex Gym neon sign at night', caption: 'The gym sign at night', w: 1200, h: 899 },
   { src: '/images/gallery-group-men-2.webp', alt: 'Members of Metro Flex Gym posing together on the gym floor', caption: 'Members on the gym floor', w: 1200, h: 900 },
   { src: '/images/gallery-prayer.webp', alt: 'Members praying inside Metro Flex Gym', caption: 'Prayer inside the gym', w: 900, h: 1200 },
   { src: '/images/gallery-ladies-cakes.webp', alt: 'Ladies members of Metro Flex Gym together with cakes', caption: 'Ladies members together', w: 1200, h: 900 },
