@@ -23,3 +23,13 @@ export const SESSIONS: Session[] = [
   { name: 'Night Session', time: '9:30 PM – 11:00 PM', who: 'Only Gents' },
   { name: 'Friday Session (Optional Service)', time: '5:00 PM – 9:00 PM', who: 'Combined Gents & Ladies' },
 ];
+
+/* Gents train morning, evening and night (plus Friday) — the afternoon
+ * slot is ladies only. Ladies train morning, afternoon and evening
+ * (plus Friday) — the night slot is gents only. */
+export const GENTS_SESSIONS: Session[] = SESSIONS.filter(
+  (s) => s.name !== 'Afternoon Session',
+);
+export const LADIES_SESSIONS: Session[] = SESSIONS.filter(
+  (s) => s.name !== 'Night Session',
+);

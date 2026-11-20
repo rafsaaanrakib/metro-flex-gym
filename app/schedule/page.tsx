@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import { Reveal, SectionHeading } from '@/components/Reveal';
 import { WhatsAppButton } from '@/components/Contact';
-import { SESSIONS } from '@/lib/hours';
+import { SESSIONS, GENTS_SESSIONS, LADIES_SESSIONS } from '@/lib/hours';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Schedule — Metro Flex Gym Agrabad',
   description:
-    'Metro Flex Gym session schedule: morning, afternoon ladies-only, evening and night sessions, plus Friday optional service. Agrabad, Chattogram.',
+    'Metro Flex Gym session schedule, clear for gents and ladies: morning, afternoon ladies-only, evening and night sessions, plus Friday optional service. Agrabad, Chattogram.',
   alternates: { canonical: 'https://metroflexgym.com.bd/schedule' },
   openGraph: {
     title: 'Schedule — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym session schedule: morning, afternoon ladies-only, evening and night sessions, plus Friday optional service. Agrabad, Chattogram.',
+      'Metro Flex Gym session schedule, clear for gents and ladies: morning, afternoon ladies-only, evening and night sessions, plus Friday optional service. Agrabad, Chattogram.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/schedule',
     siteName: 'Metro Flex Gym',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Schedule — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym session schedule: morning, afternoon ladies-only, evening and night sessions, plus Friday optional service. Agrabad, Chattogram.',
+      'Metro Flex Gym session schedule, clear for gents and ladies: morning, afternoon ladies-only, evening and night sessions, plus Friday optional service. Agrabad, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -84,6 +84,73 @@ export default function Schedule() {
               ·{' '}
               <Link href="/ladies" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 Ladies-only hours →
+              </Link>
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------ 02 · FOR GENTS / FOR LADIES */}
+      <section className="border-t border-white/10 bg-surface">
+        <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
+          <SectionHeading index="02" label="For gents & ladies" title={<>Your hours,<br />clearly.</>} />
+          <div className="grid gap-6 lg:grid-cols-2">
+            <Reveal>
+              <article className="h-full border border-white/10 bg-ink p-7 md:p-8">
+                <h3 className="font-display text-2xl font-black uppercase">For gents</h3>
+                <p className="mt-2 text-sm text-muted">Morning, evening and night — plus Friday.</p>
+                <div className="mt-6 divide-y divide-white/10 border-y border-white/10">
+                  {GENTS_SESSIONS.map((s) => (
+                    <div key={s.name} className="flex flex-wrap items-baseline justify-between gap-2 py-4">
+                      <div>
+                        <span className="font-display text-lg md:text-xl font-extrabold">{s.time}</span>
+                        <span className="block text-xs uppercase tracking-[0.2em] text-muted">{s.name}</span>
+                      </div>
+                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted">{s.who}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-5 text-sm leading-relaxed text-muted">
+                  The afternoon slot, 2:30–5:30 PM, is ladies only.
+                </p>
+              </article>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <article className="h-full border border-gold/50 bg-gold/5 p-7 md:p-8">
+                <h3 className="font-display text-2xl font-black uppercase text-gold">For ladies</h3>
+                <p className="mt-2 text-sm text-muted">Morning, afternoon and evening — plus Friday.</p>
+                <div className="mt-6 divide-y divide-white/10 border-y border-white/10">
+                  {LADIES_SESSIONS.map((s) => (
+                    <div key={s.name} className="flex flex-wrap items-baseline justify-between gap-2 py-4">
+                      <div>
+                        <span className="font-display text-lg md:text-xl font-extrabold">{s.time}</span>
+                        <span className="block text-xs uppercase tracking-[0.2em] text-muted">{s.name}</span>
+                      </div>
+                      <span
+                        className={`text-xs font-bold uppercase tracking-[0.2em] ${
+                          s.who === 'Only Ladies' ? 'text-gold' : 'text-muted'
+                        }`}
+                      >
+                        {s.who}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-5 text-sm leading-relaxed text-muted">
+                  The afternoon slot runs with a female trainer. The night slot,
+                  9:30–11:00 PM, is gents only.
+                </p>
+              </article>
+            </Reveal>
+          </div>
+          <Reveal delay={0.1}>
+            <p className="mt-8 text-sm text-muted">
+              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Gents Membership →
+              </Link>{' '}
+              ·{' '}
+              <Link href="/ladies" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Ladies Membership →
               </Link>
             </p>
           </Reveal>
