@@ -52,7 +52,7 @@ export default function OpeningHours() {
 
       {/* Hours */}
       <section className="mx-auto max-w-7xl px-4 pb-20 md:px-8">
-        <SectionHeading index="01" label="Hours" title={<>Open six days,<br />plus Friday evening.</>} />
+        <SectionHeading index="01" label="Hours" title={<>Open six days,<br />plus Friday evening — optional service.</>} />
         <div className="max-w-3xl">
           <Reveal>
             <div className="divide-y divide-white/10 border-y border-white/10">

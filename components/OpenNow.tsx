@@ -47,7 +47,7 @@ export function OpenNow() {
     return (
       <span className="inline-flex items-center gap-2 font-body text-xs tracking-[0.2em] uppercase text-muted">
         <span className="h-2 w-2 rounded-full bg-muted" aria-hidden="true" />
-        Open Sat–Thu 7 AM–11 PM · Fri 5–9 PM
+        Open Sat–Thu 7 AM–11 PM · Fri 5–9 PM (optional)
       </span>
     );
   }

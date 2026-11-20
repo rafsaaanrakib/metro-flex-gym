@@ -97,7 +97,7 @@ export default function Schedule() {
             <Reveal>
               <article className="h-full border border-white/10 bg-ink p-7 md:p-8">
                 <h3 className="font-display text-2xl font-black uppercase">For gents</h3>
-                <p className="mt-2 text-sm text-muted">Morning, evening and night — plus Friday.</p>
+                <p className="mt-2 text-sm text-muted">Morning, evening and night — plus Friday (optional service).</p>
                 <div className="mt-6 divide-y divide-white/10 border-y border-white/10">
                   {GENTS_SESSIONS.map((s) => (
                     <div key={s.name} className="flex flex-wrap items-baseline justify-between gap-2 py-4">
@@ -117,7 +117,7 @@ export default function Schedule() {
             <Reveal delay={0.08}>
               <article className="h-full border border-gold/50 bg-gold/5 p-7 md:p-8">
                 <h3 className="font-display text-2xl font-black uppercase text-gold">For ladies</h3>
-                <p className="mt-2 text-sm text-muted">Morning, afternoon and evening — plus Friday.</p>
+                <p className="mt-2 text-sm text-muted">Morning, afternoon and evening — plus Friday (optional service).</p>
                 <div className="mt-6 divide-y divide-white/10 border-y border-white/10">
                   {LADIES_SESSIONS.map((s) => (
                     <div key={s.name} className="flex flex-wrap items-baseline justify-between gap-2 py-4">

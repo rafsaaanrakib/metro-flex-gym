@@ -182,7 +182,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="mt-4 text-sm text-muted">
                 Open Sat–Thu 7:00 AM – 11:00 PM
                 <br />
-                Friday 5:00 – 9:00 PM
+                Friday 5:00 – 9:00 PM (optional service)
               </p>
               <a
                 href={MAPS_URL}
