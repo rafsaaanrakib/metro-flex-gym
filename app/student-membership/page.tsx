@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 /* Student package details from the gym's own student poster, 2026-11-18
  * (lib/pricing.ts). NOTE: unlike regular packages, the student package
  * HAS an admission fee (৳3,000). HSC-level students only; a valid
- * student ID card is required; no steam bath included (৳300 per steam).
+ * student ID card is required; no steam bath included (৳400 per steam).
  * 15% VAT applies. */
 
 export default function StudentMembership() {

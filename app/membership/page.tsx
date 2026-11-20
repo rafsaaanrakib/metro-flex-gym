@@ -139,7 +139,7 @@ export default function Membership() {
             <h3 className="font-display text-xl font-black uppercase">Student? There is a student package.</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               The student package is limited to HSC-level students only — a valid
-              student ID card is required. Admission ৳3,000 and ৳3,000 per month. No steam bath included (৳300 per steam).{' '}
+              student ID card is required. Admission ৳3,000 and ৳3,000 per month. No steam bath included (৳400 per steam).{' '}
               <Link href="/student-membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 Student Membership →
               </Link>

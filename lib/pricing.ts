@@ -49,16 +49,16 @@ export const POPULAR_PACKAGES: GymPackage[] = PACKAGES.slice(0, 4);
 /* Student membership — gym's own poster, 2026-11-18.                  */
 /* NOTE: unlike regular packages, the student package HAS an admission */
 /* fee (৳3,000). HSC-level students only; a valid student ID card is   */
-/* required; no steam bath included (৳300 per steam). 15% VAT applies. */
+/* required; no steam bath included (৳400 per steam). 15% VAT applies. */
 /* ------------------------------------------------------------------ */
 
 export const STUDENT_MEMBERSHIP = {
   admissionFee: '৳3,000',
   monthlyFee: '৳3,000',
-  perSteam: '৳300',
+  perSteam: '৳400',
   requirements: [
     'A valid student ID card is required.',
     'Limited to HSC-level students only.',
-    'No steam bath included — ৳300 per steam bath.',
+    'No steam bath included — ৳400 per steam bath.',
   ],
 };

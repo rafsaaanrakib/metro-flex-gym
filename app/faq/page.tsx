@@ -119,7 +119,7 @@ export default function Faq() {
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
                   Yes — the student package is limited to HSC-level students only, and a
                   valid student ID card is required: admission ৳3,000 and ৳3,000 per
-                  month. No steam bath included (৳300 per
+                  month. No steam bath included (৳400 per
                   steam). 15% VAT applies. See the{' '}
                   <Link href="/student-membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                     Student Membership page
