@@ -39,9 +39,9 @@ const KEY_FACILITIES = [
   { title: 'Expert Trainers', text: 'Professional fitness guidance and personalized training support for men and women.' },
   { title: 'Ladies Fitness Zone', text: 'Dedicated fitness facilities and specialized training programs for women.' },
   { title: 'Yoga, Aerobics & Zumba', text: 'Specialized fitness and wellness programs for women.' },
+  { title: 'Fully Air-Conditioned Environment', text: 'A comfortable, refreshing and modern training atmosphere.' },
   { title: 'Food Café', text: 'Added convenience to complement your fitness lifestyle.' },
   { title: 'Personal Lockers', text: 'Secure personal storage facilities for members.' },
-  { title: 'Fully Air-Conditioned Environment', text: 'A comfortable, refreshing and modern training atmosphere.' },
 ];
 
 export default function About() {
