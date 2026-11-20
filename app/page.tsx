@@ -264,8 +264,7 @@ export default function Home() {
           <SectionHeading index="05" label="Pricing" title={<>Simple plans.<br />No surprises.</>} />
           <Reveal>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted">
-              Winter Offer prices now, until 31 December 2026 — the crossed-out price is the regular price.
-              From 1 month to 10 years, with or without steam bath.
+              Regular prices, from 1 month to 10 years, with or without steam bath.
             </p>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -278,15 +277,13 @@ export default function Home() {
                     <div className="flex items-baseline justify-between gap-3">
                       <dt className="text-muted">Without steam</dt>
                       <dd className="text-right">
-                        <span className="font-display text-xl font-black text-gold">{p.withoutOffer}</span>
-                        <span className="ml-2 text-sm text-muted line-through">{p.withoutRegular}</span>
+                        <span className="font-display text-xl font-black text-gold">{p.withoutRegular}</span>
                       </dd>
                     </div>
                     <div className="flex items-baseline justify-between gap-3">
                       <dt className="text-muted">With steam</dt>
                       <dd className="text-right font-display text-xl font-black leading-tight text-gold">
-                        {p.withSteamOffer}
-                        <span className="ml-2 text-sm font-bold text-muted line-through">{p.withSteamRegular}</span>
+                        {p.withSteamRegular}
                         <span className="block text-xs font-bold text-muted">({p.steamBaths} steam baths)</span>
                       </dd>
                     </div>
@@ -297,14 +294,9 @@ export default function Home() {
           </div>
           <Reveal delay={0.1}>
             <p className="mt-8 text-sm text-muted">
-              <span className="font-semibold text-gold">❄ Winter Offer</span> — discounted prices above, regular prices crossed out.{' '}
               No admission fee · 15% VAT applies.{' '}
               <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 See all 9 packages →
-              </Link>{' '}
-              ·{' '}
-              <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                Winter Offer →
               </Link>{' '}
               ·{' '}
               <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
@@ -321,7 +313,7 @@ export default function Home() {
         <div className="grid gap-px bg-white/10 md:grid-cols-3">
           {[
             { q: 'What are the ladies-only hours?', a: '2:30–5:30 PM daily, with a female trainer facility.' },
-            { q: 'What does membership cost?', a: 'Starts at ৳4,000 with the Winter Offer (regular ৳4,500), no admission fee, 15% VAT applies.' },
+            { q: 'What does membership cost?', a: 'Starts at ৳4,500, no admission fee, 15% VAT applies.' },
             { q: 'Where exactly are you?', a: 'Amin Tower, Lift 7, Agrabad Access Rd, Chattogram.' },
           ].map((item, i) => (
             <Reveal key={item.q} delay={i * 0.06} className="bg-ink">
