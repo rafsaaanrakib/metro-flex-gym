@@ -59,8 +59,8 @@ const PROGRAMS = [
 const GALLERY = [
   { src: '/images/gallery-group-new.webp', alt: 'Members of Metro Flex Gym together on the gym floor', caption: 'The Metro Flex community', w: 1200, h: 900 },
   { src: '/images/gallery-ladies-yoga.webp', alt: 'Ladies yoga session at Metro Flex Gym', caption: 'Ladies yoga session', w: 864, h: 1536 },
-  { src: '/images/gallery-dumbbells.webp', alt: 'Dumbbell rack at Metro Flex Gym with Ironbull dumbbells', caption: 'Dumbbell rack', w: 960, h: 960 },
-  { src: '/images/gallery-cardio.webp', alt: 'Cardio zone at Metro Flex Gym — treadmills and spin bikes', caption: 'Cardio zone', w: 1200, h: 900 },
+  { src: '/images/gallery-signing.webp', alt: 'Signing ceremony at Metro Flex Gym', caption: 'Signing ceremony', w: 651, h: 488 },
+  { src: '/images/gallery-ladies-cafe.webp', alt: 'Ladies members relaxing at the gym food cafe', caption: 'At the food cafe', w: 1200, h: 900 },
   { src: '/images/gallery-weights.webp', alt: 'Free weights area at Metro Flex Gym', caption: 'Free weights area', w: 1080, h: 810 },
 ];
 
