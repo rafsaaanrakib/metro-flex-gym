@@ -57,7 +57,7 @@ export const viewport: Viewport = {
 };
 
 const NAV = [
-  { href: '/', label: 'THE GYM' },
+  { href: '/', label: 'ABOUT US' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/schedule', label: 'Our Schedule' },
   { href: '/trainers', label: 'Trainer Schedule' },

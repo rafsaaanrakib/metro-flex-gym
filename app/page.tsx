@@ -10,6 +10,18 @@ import { POPULAR_PACKAGES } from '@/lib/pricing';
 /* Real membership prices from the gym's rate card (lib/pricing.ts).   */
 /* ------------------------------------------------------------------ */
 
+const KEY_FACILITIES = [
+  { title: 'Premium Commercial Gym Equipment', text: 'Featuring internationally recognized Impulse and Real Leader gym equipment.' },
+  { title: 'Advanced Cardio Zone', text: 'Modern cardiovascular training facilities for improved fitness and endurance.' },
+  { title: 'Steam Bath', text: 'Relaxation and post-workout recovery facilities.' },
+  { title: 'Expert Trainers', text: 'Professional fitness guidance and personalized training support for men and women.' },
+  { title: 'Ladies Fitness Zone', text: 'Dedicated fitness facilities and specialized training programs for women.' },
+  { title: 'Yoga, Aerobics & Zumba', text: 'Specialized fitness and wellness programs for women.' },
+  { title: 'Food Café', text: 'Added convenience to complement your fitness lifestyle.' },
+  { title: 'Personal Lockers', text: 'Secure personal storage facilities for members.' },
+  { title: 'Fully Air-Conditioned Environment', text: 'A comfortable, refreshing and modern training atmosphere.' },
+];
+
 const FACILITIES = [
   'Commercial Gym Equipment (Impulse & Real Leader)',
   'Big Space — 4,200 sq ft',
@@ -102,24 +114,17 @@ export default function Home() {
 
       {/* ------------------------------------------------ 01 · ABOUT */}
       <section id="about" className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
-        <SectionHeading index="01" label="The Gym" title={<>A place of<br />perfect fitness.</>} />
+        <SectionHeading index="01" label="About Us" title={<>A place of<br />perfect fitness.</>} />
         <div className="grid gap-10 md:grid-cols-2 md:gap-14">
           <Reveal>
             <p className="text-lg md:text-xl leading-relaxed text-bone/90">
-              Metro Flex Gym is a 4,200 sq ft fitness floor in Amin Tower, Agrabad —
-              built for both men and women, open Saturday to Thursday, 7 AM–11 PM
-              (Friday 5–9 PM, optional service), with a trainer on the floor at all times.
-            </p>
-            <p className="mt-5 text-base leading-relaxed text-muted">
-              Commercial gym equipment (Impulse & Real Leader), a strong cardio section, steam bath, food cafe and
-              lockers — everything in one place, so you can train, recover and get on
-              with your day.
-            </p>
-            <p className="mt-5 text-base leading-relaxed text-muted">
-              8 trainers on the floor — 6 male, 2 female.{' '}
-              <Link href="/trainers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                Meet the trainers →
-              </Link>
+              Metro Flex Gym is a modern and premium fitness center, spanning an
+              impressive{' '}
+              <span className="font-display font-extrabold text-gold">4,200 square feet</span>, located at Amin Tower, Lift-7, Agrabad Access Road, opposite Golden
+              Touch Community Center, Beparipara, Agrabad, Chattogram. Designed for
+              both men and women, our facility combines international-standard gym
+              equipment, modern training facilities and experienced fitness
+              professionals to create an exceptional fitness environment.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -139,6 +144,36 @@ export default function Home() {
             </div>
           </Reveal>
         </div>
+        <Reveal>
+          <h3 className="mt-16 font-display text-2xl md:text-3xl font-black uppercase">Our key facilities</h3>
+          <ol className="mt-8 grid gap-x-14 gap-y-8 md:grid-cols-2">
+            {KEY_FACILITIES.map((f, i) => (
+              <li key={f.title} className="flex gap-4 border-t border-white/10 pt-5">
+                <span className="font-display text-lg font-black text-gold">{String(i + 1).padStart(2, '0')}</span>
+                <div>
+                  <h4 className="font-display text-lg font-black uppercase leading-tight">{f.title}</h4>
+                  <p className="mt-1 text-sm leading-relaxed text-muted">{f.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Reveal>
+        <Reveal>
+          <p className="mt-14 max-w-3xl text-base md:text-lg leading-relaxed text-bone/90">
+            At Metro Flex Gym, our mission goes beyond fitness. We are committed to
+            helping every member achieve a healthier body, a stronger mind and a more
+            confident lifestyle.
+          </p>
+          <p className="mt-5 max-w-3xl text-base md:text-lg leading-relaxed text-bone/90">
+            We believe that fitness is not just a routine; it is a commitment to a
+            better life.
+          </p>
+          <div className="mt-10 border-t border-white/10 pt-8">
+            <p className="font-display text-xl font-black uppercase tracking-wide text-gold">Metro Flex Gym</p>
+            <p className="mt-1 font-display text-lg font-black uppercase">Your Fitness, Our Commitment.</p>
+            <p className="mt-2 text-base text-muted">Experience the Difference.</p>
+          </div>
+        </Reveal>
       </section>
 
       {/* ------------------------------------------------ 02 · FACILITIES */}
