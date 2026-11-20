@@ -16,6 +16,11 @@ const FACILITIES = [
   'Strong Cardio Section',
   'Steam Bath',
   'Full AC Facilities',
+  'Lift Facilities',
+  'Parking Facility',
+  'CCTV Monitoring',
+  'Fully Wi-Fi Zone',
+  'Sound Ambience',
   'Food Cafe',
   'Prayer Facilities inside the Gym',
   'Locker Facility',
@@ -25,11 +30,6 @@ const FACILITIES = [
   'Custom Training & Diet Routine',
   'All Types of Authentic Supplements',
   'One-on-One Consultancy',
-  'Lift Facilities',
-  'Parking Facility',
-  'CCTV Monitoring',
-  'Fully Wi-Fi Zone',
-  'Sound Ambience',
 ];
 
 const PROGRAMS = [
