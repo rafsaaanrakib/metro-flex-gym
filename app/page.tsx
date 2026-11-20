@@ -139,7 +139,7 @@ export default function Home() {
                 loading="lazy"
               />
               <p className="mt-3 text-xs uppercase tracking-[0.25em] text-muted">
-                The free weights area — Metro Flex Gym, Agrabad Access Road
+                The free weights area — Metro Flex Gym, Agrabad Access Road, Chattogram
               </p>
             </div>
             <div className="relative mt-6 overflow-hidden">
