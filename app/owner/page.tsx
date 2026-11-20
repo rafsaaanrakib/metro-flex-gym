@@ -28,7 +28,8 @@ export const metadata: Metadata = {
 };
 
 /* Owner facts only: name from the gym's trade licence and receipt
- * (2026-11-12); title Founder & Owner per the gym. No invented biography. */
+ * (2026-11-12); title Founder & Owner per the gym; roles from the gym's
+ * card (2026-11-20). No invented biography. */
 
 export default function Owner() {
   return (
@@ -68,6 +69,19 @@ export default function Owner() {
               MD Nasimul Haque Liton is the Founder &amp; Owner of Metro Flex Gym —
               a gents &amp; ladies gym in Agrabad Access Road, Chattogram.
             </p>
+            <div className="mt-8 border-t border-bone/15 pt-6">
+              <p className="font-body text-[11px] md:text-xs tracking-[0.3em] uppercase text-gold">Roles beyond the gym</p>
+              <ul className="mt-4 space-y-3 text-base leading-relaxed text-bone/90">
+                <li>
+                  <span className="font-semibold text-bone">National Sports Judge &amp; Executive Member</span>
+                  {' '}— Bangladesh Bodybuilding Federation
+                </li>
+                <li>
+                  <span className="font-semibold text-bone">Joint Secretary</span>
+                  {' '}— Chattogram Gym Owners Association
+                </li>
+              </ul>
+            </div>
             <p className="mt-5 text-base leading-relaxed text-muted">
               The gym runs on commercial equipment (Impulse &amp; Real Leader), with
               a strong cardio section, steam bath, ladies-only hours every
