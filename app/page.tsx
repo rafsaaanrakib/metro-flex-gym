@@ -142,6 +142,20 @@ export default function Home() {
                 The free weights area — Metro Flex Gym, Agrabad Access Road
               </p>
             </div>
+            <div className="relative mt-6 overflow-hidden">
+              <Image
+                src="/images/gallery-impulse-machine.webp"
+                alt="Impulse standing multi-flight machine at Metro Flex Gym"
+                width={1200}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                loading="lazy"
+              />
+              <p className="mt-3 text-xs uppercase tracking-[0.25em] text-muted">
+                The Impulse machine — Metro Flex Gym, Agrabad Access Road
+              </p>
+            </div>
           </Reveal>
         </div>
         <Reveal>
