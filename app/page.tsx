@@ -26,7 +26,7 @@ const FACILITIES = [
   'Prayer Facilities inside the Gym',
   'All Time Trainer Facility',
   'Female Trainer Facility',
-  'Friday 5–9 PM — Optional Service',
+  '7 Days Open',
   'Custom Training & Diet Routine',
   'All Types of Authentic Supplements',
   'One-on-One Consultancy',
