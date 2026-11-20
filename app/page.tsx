@@ -153,7 +153,7 @@ export default function Home() {
                 loading="lazy"
               />
               <p className="mt-3 text-xs uppercase tracking-[0.25em] text-muted">
-                The Impulse machine — Metro Flex Gym, Agrabad Access Road
+                The Impulse machine — Metro Flex Gym, Agrabad Access Road, Chattogram
               </p>
             </div>
           </Reveal>
