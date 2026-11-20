@@ -228,6 +228,10 @@ export default function Home() {
                 Female <span className="text-gold">—</span> <span className="text-muted text-base font-bold">Ladies sessions</span>
               </h3>
               <div className="mt-5 divide-y divide-white/10 border-y border-white/10">
+                <div className="flex flex-wrap items-baseline justify-between gap-2 py-4">
+                  <span className="font-display text-xl md:text-2xl font-extrabold">7:00 AM – 2:30 PM</span>
+                  <span className="text-xs uppercase tracking-[0.2em] text-muted">Combined Gents &amp; Ladies</span>
+                </div>
                 <div className="flex flex-wrap items-baseline justify-between gap-2 border border-gold/50 bg-gold/10 px-4 py-4">
                   <span className="font-display text-xl md:text-2xl font-extrabold text-gold">2:30 PM – 5:30 PM</span>
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-gold">Only Ladies ★</span>
