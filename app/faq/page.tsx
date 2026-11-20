@@ -4,14 +4,14 @@ import { WhatsAppButton, WHATSAPP_URL, MAPS_URL } from '@/components/Contact';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'FAQ — Metro Flex Gym Agrabad',
+  title: 'Help & Important Information — Metro Flex Gym Agrabad',
   description:
-    'Metro Flex Gym FAQ: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
+    'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
   alternates: { canonical: 'https://metroflexgym.com.bd/faq' },
   openGraph: {
-    title: 'FAQ — Metro Flex Gym Agrabad',
+    title: 'Help & Important Information — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym FAQ: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
+      'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/faq',
     siteName: 'Metro Flex Gym',
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FAQ — Metro Flex Gym Agrabad',
+    title: 'Help & Important Information — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym FAQ: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
+      'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -37,7 +37,7 @@ export default function Faq() {
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-32 md:px-8 md:pt-40">
         <Reveal>
           <p className="font-body text-[11px] md:text-xs tracking-[0.3em] uppercase text-gold">
-            FAQ <span className="text-muted mx-2">/</span> Questions, answered
+            Help <span className="text-muted mx-2">/</span> Important information
           </p>
           <h1 className="mt-4 font-display font-black uppercase leading-[0.92] tracking-tight text-5xl md:text-7xl">
             Asked,
@@ -103,7 +103,7 @@ export default function Faq() {
                     </Link>{' '}
                     and{' '}
                     <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                      Membership &amp; Payment
+                      Gents Membership
                     </Link>{' '}
                     for the full rate card.
                   </p>
@@ -135,8 +135,8 @@ export default function Faq() {
                   By bank transfer (BRAC Bank, City Bank or Eastern Bank), or by
                   bKash or Nagad — then confirm your payment on WhatsApp. All
                   account details are on the{' '}
-                  <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                    Membership &amp; Payment page
+                  <Link href="/payment" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                    Payment Method page
                   </Link>
                   .
                 </p>
@@ -200,7 +200,7 @@ export default function Faq() {
                   The gym has not shared the trainers&apos; names yet; ask on WhatsApp
                   and they will confirm it. See the{' '}
                   <Link href="/trainers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                    Trainers page
+                    Trainer Schedule page
                   </Link>{' '}
                   for the full detail.
                 </p>
@@ -237,7 +237,7 @@ export default function Faq() {
             </div>
             <p className="mt-8 text-sm text-muted">
               <Link href="/ladies" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Ladies-only hours</Link>
-              {' '}· <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Membership &amp; payment</Link>
+              {' '}· <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Gents Membership</Link>
             </p>
           </Reveal>
         </div>

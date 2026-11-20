@@ -4,12 +4,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { WHATSAPP_URL } from './Contact';
 
-/** Hamburger menu for small screens. Desktop nav stays in layout.tsx. */
+/** Hamburger menu for all screens — the full page list opens line by line. */
 export function MobileMenu({ items }: { items: { href: string; label: string }[] }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:hidden shrink-0">
+    <div className="shrink-0">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}

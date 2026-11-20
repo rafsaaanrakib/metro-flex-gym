@@ -6,14 +6,14 @@ import { OpenNow } from '@/components/OpenNow';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Ladies Gym in Agrabad — Metro Flex Gym (Ladies-Only Hours)',
+  title: 'Ladies Membership — Metro Flex Gym Agrabad',
   description:
-    'Ladies-only gym hours in Agrabad, Chattogram: 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym, open Sat–Thu 7 AM–11 PM, Fri 5–9 PM.',
+    'Ladies membership at Metro Flex Gym, Agrabad: ladies-only hours 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym, open Sat–Thu 7 AM–11 PM, Fri 5–9 PM.',
   alternates: { canonical: 'https://metroflexgym.com.bd/ladies' },
   openGraph: {
-    title: 'Ladies Gym in Agrabad — Metro Flex Gym (Ladies-Only Hours)',
+    title: 'Ladies Membership — Metro Flex Gym Agrabad',
     description:
-      'Ladies-only gym hours in Agrabad: 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym in Agrabad, Chattogram.',
+      'Ladies membership at Metro Flex Gym, Agrabad: ladies-only hours 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym in Agrabad, Chattogram.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/ladies',
     siteName: 'Metro Flex Gym',
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ladies Gym in Agrabad — Metro Flex Gym (Ladies-Only Hours)',
+    title: 'Ladies Membership — Metro Flex Gym Agrabad',
     description:
-      'Ladies-only gym hours in Agrabad: 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym in Agrabad, Chattogram.',
+      'Ladies membership at Metro Flex Gym, Agrabad: ladies-only hours 2:30–5:30 PM daily with a female trainer facility. 4,200 sq ft gym in Agrabad, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -40,7 +40,7 @@ export default function Ladies() {
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-32 md:px-8 md:pt-40">
         <Reveal>
           <p className="font-body text-[11px] md:text-xs tracking-[0.3em] uppercase text-gold">
-            Ladies <span className="text-muted mx-2">/</span> For Women
+            Ladies <span className="text-muted mx-2">/</span> Membership
           </p>
           <h1 className="mt-4 font-display font-black uppercase leading-[0.92] tracking-tight text-5xl md:text-7xl">
             Ladies only,
@@ -129,10 +129,43 @@ export default function Ladies() {
         </div>
       </section>
 
-      {/* ------------------------------------------------ 03 · WHAT TO EXPECT */}
+      {/* ------------------------------------------------ 03 · MEMBERSHIP */}
+      <section className="border-t border-white/10">
+        <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
+          <SectionHeading index="03" label="Membership" title={<>Membership,<br />for ladies.</>} />
+          <div className="max-w-2xl">
+            <Reveal>
+              <p className="text-base md:text-lg leading-relaxed text-bone/90">
+                Membership packages run from ৳4,000 a month with the Winter Offer
+                (regular ৳4,500), monthly to 10 years, with or without steam bath.
+                No admission fee; 15% VAT applies.
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-muted">
+                Whether ladies&apos; membership prices differ from gents&apos; — ask
+                on WhatsApp and the gym will confirm the current details.
+              </p>
+              <p className="mt-6 text-sm text-muted">
+                <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                  See the Winter Offer →
+                </Link>{' '}
+                ·{' '}
+                <Link href="/payment" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                  Payment Method →
+                </Link>{' '}
+                ·{' '}
+                <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                  Gents Membership →
+                </Link>
+              </p>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------ 04 · WHAT TO EXPECT */}
       <section className="border-t border-white/10 bg-surface">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
-          <SectionHeading index="03" label="What to expect" title={<>On the floor<br />with you.</>} />
+          <SectionHeading index="04" label="What to expect" title={<>On the floor<br />with you.</>} />
           <div className="grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { n: '01', title: 'The whole floor', text: 'A 4,200 sq ft floor — free weights, cardio section, machines and a steam bath, all in one place.' },
@@ -181,7 +214,7 @@ export default function Ladies() {
               <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 Open in Google Maps
               </a>{' '}
-              · <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">See membership &amp; payment</Link>
+              · <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">See the Winter Offer</Link>
             </p>
           </Reveal>
         </div>

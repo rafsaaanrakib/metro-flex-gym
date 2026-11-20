@@ -92,7 +92,7 @@ export default function StudentMembership() {
               Unlike regular memberships, the student package has an admission
               fee of ৳3,000. For regular packages, see{' '}
               <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                Membership &amp; Payment
+                Gents Membership
               </Link>
               .
             </p>
@@ -130,7 +130,7 @@ export default function StudentMembership() {
               <WhatsAppButton label="Join on WhatsApp" />
             </div>
             <p className="mt-8 text-sm text-muted">
-              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Membership &amp; payment</Link>
+              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Gents Membership</Link>
               {' '}· <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Winter Offer</Link>
             </p>
           </Reveal>

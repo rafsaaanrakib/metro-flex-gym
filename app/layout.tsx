@@ -57,12 +57,17 @@ export const viewport: Viewport = {
 };
 
 const NAV = [
-  { href: '/#about', label: 'The Gym' },
-  { href: '/ladies', label: 'Ladies' },
+  { href: '/', label: 'THE GYM' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/offers', label: 'Offers' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/membership', label: 'Membership' },
+  { href: '/schedule', label: 'Our Schedule' },
+  { href: '/trainers', label: 'Trainer Schedule' },
+  { href: '/membership', label: 'Gents Membership' },
+  { href: '/ladies', label: 'Ladies Membership' },
+  { href: '/student-membership', label: 'Student Membership' },
+  { href: '/offers', label: 'Ongoing Offer' },
+  { href: '/payment', label: 'Payment Method' },
+  { href: '/faq', label: 'Help & important Information' },
+  { href: '/owner', label: 'Owner' },
 ];
 
 const jsonLd = {
@@ -126,17 +131,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </span>
               </span>
             </Link>
-            <nav className="hidden items-center gap-6 lg:flex" aria-label="Main navigation">
-              {NAV.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-[13px] font-semibold uppercase tracking-wider text-bone/80 transition-colors hover:text-gold"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
             <div className="flex shrink-0 items-center gap-3">
               <a
                 href={WHATSAPP_URL}
@@ -167,18 +161,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <h3 className="font-display text-sm font-extrabold uppercase tracking-[0.25em] text-gold">Pages</h3>
               <ul className="mt-4 space-y-2.5 text-sm text-bone/85">
-                <li><Link href="/" className="inline-block py-1 hover:text-gold">Home</Link></li>
-                <li><Link href="/membership" className="inline-block py-1 hover:text-gold">Membership &amp; Payment</Link></li>
-                <li><Link href="/regular-price" className="inline-block py-1 hover:text-gold">Regular Price</Link></li>
-                <li><Link href="/offers" className="inline-block py-1 hover:text-gold">Winter Offer</Link></li>
-                <li><Link href="/student-membership" className="inline-block py-1 hover:text-gold">Student Membership</Link></li>
-                <li><Link href="/ladies" className="inline-block py-1 hover:text-gold">Ladies / For Women</Link></li>
-                <li><Link href="/trainers" className="inline-block py-1 hover:text-gold">Trainers</Link></li>
+                <li><Link href="/" className="inline-block py-1 hover:text-gold">The Gym</Link></li>
                 <li><Link href="/gallery" className="inline-block py-1 hover:text-gold">Gallery</Link></li>
-                <li><Link href="/opening-hours" className="inline-block py-1 hover:text-gold">Opening Hours</Link></li>
-                <li><Link href="/schedule" className="inline-block py-1 hover:text-gold">Schedule</Link></li>
+                <li><Link href="/schedule" className="inline-block py-1 hover:text-gold">Our Schedule</Link></li>
+                <li><Link href="/trainers" className="inline-block py-1 hover:text-gold">Trainer Schedule</Link></li>
+                <li><Link href="/membership" className="inline-block py-1 hover:text-gold">Gents Membership</Link></li>
+                <li><Link href="/ladies" className="inline-block py-1 hover:text-gold">Ladies Membership</Link></li>
+                <li><Link href="/student-membership" className="inline-block py-1 hover:text-gold">Student Membership</Link></li>
+                <li><Link href="/offers" className="inline-block py-1 hover:text-gold">Ongoing Offer</Link></li>
+                <li><Link href="/payment" className="inline-block py-1 hover:text-gold">Payment Method</Link></li>
+                <li><Link href="/faq" className="inline-block py-1 hover:text-gold">Help &amp; Important Information</Link></li>
                 <li><Link href="/owner" className="inline-block py-1 hover:text-gold">Owner</Link></li>
-                <li><Link href="/faq" className="inline-block py-1 hover:text-gold">FAQ</Link></li>
               </ul>
             </div>
             <div>

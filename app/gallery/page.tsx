@@ -107,7 +107,7 @@ export default function Gallery() {
               <WhatsAppButton label="Ask on WhatsApp" />
             </div>
             <p className="mt-8 text-sm text-muted">
-              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Membership &amp; payment</Link>
+              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Gents Membership</Link>
               {' '}· <Link href="/opening-hours" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Opening hours</Link>
             </p>
           </Reveal>

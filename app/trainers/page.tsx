@@ -5,12 +5,12 @@ import { SESSIONS } from '@/lib/hours';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Trainers — Metro Flex Gym Agrabad',
+  title: 'Trainer Schedule — Metro Flex Gym Agrabad',
   description:
     '8 trainers at Metro Flex Gym, Agrabad: 6 male and 2 female, on the floor during every open hour. Ladies-only slot covered by a female trainer.',
   alternates: { canonical: 'https://metroflexgym.com.bd/trainers' },
   openGraph: {
-    title: 'Trainers — Metro Flex Gym Agrabad',
+    title: 'Trainer Schedule — Metro Flex Gym Agrabad',
     description:
       '8 trainers at Metro Flex Gym, Agrabad: 6 male and 2 female, on the floor during every open hour. Ladies-only slot covered by a female trainer.',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Trainers — Metro Flex Gym Agrabad',
+    title: 'Trainer Schedule — Metro Flex Gym Agrabad',
     description:
       '8 trainers at Metro Flex Gym, Agrabad: 6 male and 2 female, on the floor during every open hour. Ladies-only slot covered by a female trainer.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
@@ -39,11 +39,11 @@ export default function Trainers() {
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-32 md:px-8 md:pt-40">
         <Reveal>
           <p className="font-body text-[11px] md:text-xs tracking-[0.3em] uppercase text-gold">
-            The Gym <span className="text-muted mx-2">/</span> Trainers
+            The Gym <span className="text-muted mx-2">/</span> Trainer Schedule
           </p>
           <h1 className="mt-4 font-display font-black uppercase leading-[0.92] tracking-tight text-5xl md:text-7xl">
-            Trainers on<br />
-            <span className="text-gold-gradient">the floor.</span>
+            Trainer<br />
+            <span className="text-gold-gradient">schedule.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
             A trainer is on the floor at all times while the gym is open — for
@@ -139,7 +139,7 @@ export default function Trainers() {
               <WhatsAppButton label="Ask on WhatsApp" />
             </div>
             <p className="mt-8 text-sm text-muted">
-              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Membership &amp; payment</Link>
+              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Gents Membership</Link>
               {' '}· <Link href="/opening-hours" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Opening hours</Link>
             </p>
           </Reveal>

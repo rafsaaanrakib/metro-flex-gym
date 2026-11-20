@@ -130,7 +130,7 @@ export default function RegularPrice() {
               <WhatsAppButton />
             </div>
             <p className="mt-8 text-sm text-muted">
-              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Membership &amp; payment</Link>
+              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Gents Membership</Link>
               {' '}· <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Winter Offer</Link>
             </p>
           </Reveal>

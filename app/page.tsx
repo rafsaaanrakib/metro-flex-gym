@@ -447,7 +447,7 @@ export default function Home() {
             </div>
             <p className="mt-8 text-sm">
               <Link href="/faq" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                Questions? Read the FAQ →
+                Questions? Get help →
               </Link>
             </p>
           </Reveal>
