@@ -309,7 +309,7 @@ export default function Home() {
 
       {/* ------------------------------------------------ 06 · FAQ TEASER */}
       <section id="faq-teaser" className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
-        <SectionHeading index="06" label="FAQ" title={<>Questions,<br />answered.</>} />
+        <SectionHeading index="06" label="Help & important Information" title={<>Questions,<br />answered.</>} />
         <div className="grid gap-px bg-white/10 md:grid-cols-3">
           {[
             { q: 'What are the ladies-only hours?', a: '2:30–5:30 PM daily, with a female trainer facility.' },

@@ -4,12 +4,12 @@ import { WhatsAppButton, WHATSAPP_URL, MAPS_URL } from '@/components/Contact';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Help & Important Information — Metro Flex Gym Agrabad',
+  title: 'Help & important Information — Metro Flex Gym Agrabad',
   description:
     'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
   alternates: { canonical: 'https://metroflexgym.com.bd/faq' },
   openGraph: {
-    title: 'Help & Important Information — Metro Flex Gym Agrabad',
+    title: 'Help & important Information — Metro Flex Gym Agrabad',
     description:
       'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
     type: 'website',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Help & Important Information — Metro Flex Gym Agrabad',
+    title: 'Help & important Information — Metro Flex Gym Agrabad',
     description:
       'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
@@ -40,9 +40,9 @@ export default function Faq() {
             Help <span className="text-muted mx-2">/</span> Important information
           </p>
           <h1 className="mt-4 font-display font-black uppercase leading-[0.92] tracking-tight text-5xl md:text-7xl">
-            Asked,
+            Help &
             <br />
-            <span className="text-gold-gradient">answered.</span>
+            <span className="text-gold-gradient">important Information.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
             The questions that stop people joining, answered plainly. Anything
@@ -94,19 +94,18 @@ export default function Faq() {
                 </summary>
                 <div className="mt-4 max-w-2xl">
                   <p className="text-base leading-relaxed text-muted">
-                    Membership starts at <span className="font-display font-extrabold text-gold">৳4,000</span> with the
-                    Winter Offer (regular ৳4,500) for 1 month without a steam bath. There are
-                    9 packages, from 1 month to 10 years, each with or without steam bath.
-                    No admission fee. 15% VAT applies. The offer ends 31 December 2026.
-                    See the{' '}
-                    <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                      Winter Offer
-                    </Link>{' '}
-                    and{' '}
+                    Membership starts at <span className="font-display font-extrabold text-gold">৳4,500</span> for
+                    1 month without a steam bath. There are 9 packages, from 1 month to
+                    10 years, each with or without steam bath. No admission fee. 15% VAT
+                    applies. See the{' '}
                     <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                       Gents Membership
                     </Link>{' '}
-                    for the full rate card.
+                    and{' '}
+                    <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                      Regular Price
+                    </Link>{' '}
+                    pages for the full rate card.
                   </p>
                 </div>
               </details>
