@@ -10,18 +10,6 @@ import { POPULAR_PACKAGES } from '@/lib/pricing';
 /* Real membership prices from the gym's rate card (lib/pricing.ts).   */
 /* ------------------------------------------------------------------ */
 
-const KEY_FACILITIES = [
-  { title: 'Premium Commercial Gym Equipment', text: 'Featuring internationally recognized Impulse and Real Leader gym equipment.' },
-  { title: 'Advanced Cardio Zone', text: 'Modern cardiovascular training facilities for improved fitness and endurance.' },
-  { title: 'Steam Bath', text: 'Relaxation and post-workout recovery facilities.' },
-  { title: 'Expert Trainers', text: 'Professional fitness guidance and personalized training support for men and women.' },
-  { title: 'Ladies Fitness Zone', text: 'Dedicated fitness facilities and specialized training programs for women.' },
-  { title: 'Yoga, Aerobics & Zumba', text: 'Specialized fitness and wellness programs for women.' },
-  { title: 'Food Café', text: 'Added convenience to complement your fitness lifestyle.' },
-  { title: 'Personal Lockers', text: 'Secure personal storage facilities for members.' },
-  { title: 'Fully Air-Conditioned Environment', text: 'A comfortable, refreshing and modern training atmosphere.' },
-];
-
 const FACILITIES = [
   'Commercial Gym Equipment (Impulse & Real Leader)',
   'Big Space — 4,200 sq ft',
@@ -126,6 +114,11 @@ export default function Home() {
               equipment, modern training facilities and experienced fitness
               professionals to create an exceptional fitness environment.
             </p>
+            <p className="mt-6">
+              <Link href="/about" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                More about us →
+              </Link>
+            </p>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="relative overflow-hidden">
@@ -158,36 +151,6 @@ export default function Home() {
             </div>
           </Reveal>
         </div>
-        <Reveal>
-          <h3 className="mt-16 font-display text-2xl md:text-3xl font-black uppercase">Our key facilities</h3>
-          <ol className="mt-8 grid gap-x-14 gap-y-8 md:grid-cols-2">
-            {KEY_FACILITIES.map((f, i) => (
-              <li key={f.title} className="flex gap-4 border-t border-white/10 pt-5">
-                <span className="font-display text-lg font-black text-gold">{String(i + 1).padStart(2, '0')}</span>
-                <div>
-                  <h4 className="font-display text-lg font-black uppercase leading-tight">{f.title}</h4>
-                  <p className="mt-1 text-sm leading-relaxed text-muted">{f.text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </Reveal>
-        <Reveal>
-          <p className="mt-14 max-w-3xl text-base md:text-lg leading-relaxed text-bone/90">
-            At Metro Flex Gym, our mission goes beyond fitness. We are committed to
-            helping every member achieve a healthier body, a stronger mind and a more
-            confident lifestyle.
-          </p>
-          <p className="mt-5 max-w-3xl text-base md:text-lg leading-relaxed text-bone/90">
-            We believe that fitness is not just a routine; it is a commitment to a
-            better life.
-          </p>
-          <div className="mt-10 border-t border-white/10 pt-8">
-            <p className="font-display text-xl font-black uppercase tracking-wide text-gold">Metro Flex Gym</p>
-            <p className="mt-1 font-display text-lg font-black uppercase">Your Fitness, Our Commitment.</p>
-            <p className="mt-2 text-base text-muted">Experience the Difference.</p>
-          </div>
-        </Reveal>
       </section>
 
       {/* ------------------------------------------------ 02 · FACILITIES */}

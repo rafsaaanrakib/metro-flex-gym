@@ -57,7 +57,7 @@ export const viewport: Viewport = {
 };
 
 const NAV = [
-  { href: '/', label: 'ABOUT US' },
+  { href: '/about', label: 'ABOUT US' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/schedule', label: 'Our Schedule' },
   { href: '/trainers', label: 'Trainer Schedule' },
@@ -161,7 +161,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <h3 className="font-display text-sm font-extrabold uppercase tracking-[0.25em] text-gold">Pages</h3>
               <ul className="mt-4 space-y-2.5 text-sm text-bone/85">
-                <li><Link href="/" className="inline-block py-1 hover:text-gold">The Gym</Link></li>
+                <li><Link href="/about" className="inline-block py-1 hover:text-gold">About Us</Link></li>
                 <li><Link href="/gallery" className="inline-block py-1 hover:text-gold">Gallery</Link></li>
                 <li><Link href="/schedule" className="inline-block py-1 hover:text-gold">Our Schedule</Link></li>
                 <li><Link href="/trainers" className="inline-block py-1 hover:text-gold">Trainer Schedule</Link></li>
