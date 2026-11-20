@@ -44,8 +44,7 @@ export default function Schedule() {
             <span className="text-gold-gradient">schedule.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
-            Sessions are organised for gents and ladies — including a dedicated
-            ladies-only slot every afternoon, 2:30–5:30 PM.
+            Sessions are organised for gents and ladies.
           </p>
         </Reveal>
       </section>

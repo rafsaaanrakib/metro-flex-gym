@@ -202,8 +202,7 @@ export default function Home() {
           <Reveal>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted">
               Open Saturday to Thursday, 7:00 AM to 11:00 PM — Friday 5:00–9:00 PM
-              (optional service). Sessions are organised for
-              gents and ladies — including a dedicated ladies-only slot every afternoon.
+              (optional service). Sessions are organised for gents and ladies.
             </p>
           </Reveal>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
@@ -238,10 +237,6 @@ export default function Home() {
                   <span className="text-xs uppercase tracking-[0.2em] text-muted">Combined Gents &amp; Ladies</span>
                 </div>
               </div>
-              <p className="mt-4 text-sm leading-relaxed text-muted">
-                Ladies-only hours every afternoon, with a female trainer facility — train
-                comfortably, on your own terms.
-              </p>
             </Reveal>
           </div>
           <Reveal delay={0.15}>
