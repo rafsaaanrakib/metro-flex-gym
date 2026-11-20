@@ -79,7 +79,11 @@ export default function Payment() {
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
             For online payment — by bank transfer, bKash or Nagad — contact the
-            gym on WhatsApp. Pick a plan on the{' '}
+            gym on WhatsApp at{' '}
+            <a href={WHATSAPP_URL} className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+              01715-266172
+            </a>
+            . Pick a plan on the{' '}
             <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
               Gents Membership
             </Link>{' '}
