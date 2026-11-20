@@ -7,12 +7,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Payment Method — Metro Flex Gym Agrabad',
   description:
-    'How to pay at Metro Flex Gym, Agrabad: bank transfer (BRAC Bank, City Bank, Eastern Bank), bKash or Nagad. Pay the gym directly — no online payment form.',
+    'How to pay at Metro Flex Gym, Agrabad: bank transfer (BRAC Bank, City Bank, Eastern Bank), bKash or Nagad. To pay online, contact the gym on WhatsApp.',
   alternates: { canonical: 'https://metroflexgym.com.bd/payment' },
   openGraph: {
     title: 'Payment Method — Metro Flex Gym Agrabad',
     description:
-      'How to pay at Metro Flex Gym, Agrabad: bank transfer (BRAC Bank, City Bank, Eastern Bank), bKash or Nagad. Pay the gym directly — no online payment form.',
+      'How to pay at Metro Flex Gym, Agrabad: bank transfer (BRAC Bank, City Bank, Eastern Bank), bKash or Nagad. To pay online, contact the gym on WhatsApp.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/payment',
     siteName: 'Metro Flex Gym',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Payment Method — Metro Flex Gym Agrabad',
     description:
-      'How to pay at Metro Flex Gym, Agrabad: bank transfer (BRAC Bank, City Bank, Eastern Bank), bKash or Nagad. Pay the gym directly — no online payment form.',
+      'How to pay at Metro Flex Gym, Agrabad: bank transfer (BRAC Bank, City Bank, Eastern Bank), bKash or Nagad. To pay online, contact the gym on WhatsApp.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -78,12 +78,12 @@ export default function Payment() {
             <span className="text-gold-gradient">your way.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
-            No online payment form — you pay the gym directly, by bank transfer,
-            bKash or Nagad. Pick a plan on the{' '}
+            For online payment — by bank transfer, bKash or Nagad — contact the
+            gym on WhatsApp. Pick a plan on the{' '}
             <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
               Gents Membership
             </Link>{' '}
-            page, pay here, then confirm on WhatsApp.
+            page first, then message the gym to pay.
           </p>
         </Reveal>
       </section>
