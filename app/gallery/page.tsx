@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
 };
 
-/* Real gym photos only — 15 photos: 5 more from the gym (2026-11-18,
- * second batch) plus the 10 already on the site. No stock photos. */
+/* Real gym photos only — 13 photos. The Dumbbell Rack and Cardio Zone
+ * photos were removed 2026-11-20. No stock photos. */
 
 const PHOTOS = [
   { src: '/images/gallery-group-men-2.webp', alt: 'Members of Metro Flex Gym posing together on the gym floor', caption: 'Members on the gym floor', w: 1200, h: 900 },
@@ -43,8 +43,6 @@ const PHOTOS = [
   { src: '/images/gallery-signing.webp', alt: 'Signing ceremony at Metro Flex Gym', caption: 'Signing ceremony', w: 651, h: 488 },
   { src: '/images/gallery-group.webp', alt: 'Members of Metro Flex Gym together on the gym floor', caption: 'Members together', w: 1200, h: 675 },
   { src: '/images/gallery-team.webp', alt: 'Members posing together inside Metro Flex Gym', caption: 'Members on the floor', w: 1200, h: 900 },
-  { src: '/images/gallery-dumbbells.webp', alt: 'Dumbbell rack at Metro Flex Gym', caption: 'Dumbbell rack', w: 960, h: 960 },
-  { src: '/images/gallery-cardio.webp', alt: 'Cardio zone at Metro Flex Gym — treadmills and spin bikes', caption: 'Cardio zone', w: 1200, h: 900 },
   { src: '/images/gallery-weights.webp', alt: 'Free weights area at Metro Flex Gym', caption: 'Free weights area', w: 1080, h: 810 },
 ];
 
