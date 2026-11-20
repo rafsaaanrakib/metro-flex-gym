@@ -50,7 +50,7 @@ export default function Trainers() {
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-32 md:px-8 md:pt-40">
         <Reveal>
           <p className="font-body text-[11px] md:text-xs tracking-[0.3em] uppercase text-gold">
-            About Us <span className="text-muted mx-2">/</span> Trainer Schedule
+            The Gym <span className="text-muted mx-2">/</span> Trainer Schedule
           </p>
           <h1 className="mt-4 font-display font-black uppercase leading-[0.92] tracking-tight text-5xl md:text-7xl">
             Trainer<br />

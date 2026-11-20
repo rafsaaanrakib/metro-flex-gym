@@ -114,7 +114,7 @@ export default function Home() {
 
       {/* ------------------------------------------------ 01 · ABOUT */}
       <section id="about" className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
-        <SectionHeading index="01" label="About Us" title={<>A place of<br />perfect fitness.</>} />
+        <SectionHeading index="01" label="The Gym" title={<>A place of<br />perfect fitness.</>} />
         <div className="grid gap-10 md:grid-cols-2 md:gap-14">
           <Reveal>
             <p className="text-lg md:text-xl leading-relaxed text-bone/90">
