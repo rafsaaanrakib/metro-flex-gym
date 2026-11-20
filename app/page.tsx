@@ -15,7 +15,7 @@ const FACILITIES = [
   'Big Space — 4,200 sq ft',
   'Strong Cardio Section',
   'Steam Bath',
-  'Full AC Facilities',
+  'Fully Air-Conditioned Environment',
   'Lift Facilities',
   'Parking Facility',
   'Locker Facility',
