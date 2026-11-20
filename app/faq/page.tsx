@@ -101,11 +101,7 @@ export default function Faq() {
                     <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                       Gents Membership
                     </Link>{' '}
-                    and{' '}
-                    <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                      Regular Price
-                    </Link>{' '}
-                    pages for the full rate card.
+                    page for the full rate card.
                   </p>
                 </div>
               </details>

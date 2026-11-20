@@ -346,10 +346,6 @@ export default function Home() {
               No admission fee · 15% VAT applies.{' '}
               <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 See all 9 packages →
-              </Link>{' '}
-              ·{' '}
-              <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                Regular prices →
               </Link>
             </p>
           </Reveal>

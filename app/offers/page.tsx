@@ -137,8 +137,8 @@ export default function Offers() {
         <Reveal delay={0.1}>
           <p className="mt-8 text-sm text-muted">
             The crossed-out price is the regular price — see the{' '}
-            <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              Regular Price page
+            <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+              Gents Membership page
             </Link>{' '}
             for the full list. No admission fee · 15% VAT applies. The offer ends 31 December 2026.
             To join at the offer price, message the gym on WhatsApp.
@@ -158,7 +158,7 @@ export default function Offers() {
             </div>
             <p className="mt-8 text-sm text-muted">
               <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Gents Membership</Link>
-              {' '}· <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Regular prices</Link>
+              {' '}· <Link href="/ladies" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">Ladies Membership</Link>
             </p>
           </Reveal>
         </div>
