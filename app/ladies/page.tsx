@@ -7,12 +7,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Ladies Membership — Metro Flex Gym Agrabad',
   description:
-    'Ladies membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
+    'Ladies membership at Metro Flex Gym, Agrabad Access Road: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
   alternates: { canonical: 'https://metroflexgym.com.bd/ladies' },
   openGraph: {
     title: 'Ladies Membership — Metro Flex Gym Agrabad',
     description:
-      'Ladies membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
+      'Ladies membership at Metro Flex Gym, Agrabad Access Road: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/ladies',
     siteName: 'Metro Flex Gym',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ladies Membership — Metro Flex Gym Agrabad',
     description:
-      'Ladies membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
+      'Ladies membership at Metro Flex Gym, Agrabad Access Road: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };

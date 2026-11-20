@@ -6,12 +6,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Help & important Information — Metro Flex Gym Agrabad',
   description:
-    'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
+    'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad Access Road, Chattogram.',
   alternates: { canonical: 'https://metroflexgym.com.bd/faq' },
   openGraph: {
     title: 'Help & important Information — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
+      'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad Access Road, Chattogram.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/faq',
     siteName: 'Metro Flex Gym',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Help & important Information — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad, Chattogram.',
+      'Metro Flex Gym help & important information: opening hours, ladies-only hours, membership prices, how to pay, parking and location in Agrabad Access Road, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -161,7 +161,7 @@ export default function Faq() {
                 </summary>
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
                   Rafiq Ullah Bari, Bepari Para, Amin Tower (Lift 7), Agrabad
-                  Access Rd, Chattogram 4100 — on Agrabad Access Road, Bepari
+                  Access Road, Chattogram 4100 — on Agrabad Access Road, Bepari
                   Para. Take the lift to the 7th floor.{' '}
                   <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                     Open in Google Maps →

@@ -79,7 +79,7 @@ const jsonLd = {
     'The fitness center providing tremendous gymnasium facilities in the city for handsome men & women.',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Rafiq Ullah Bari, Bepari Para, Amin Tower (Lift 7), Agrabad Access Rd',
+    streetAddress: 'Rafiq Ullah Bari, Bepari Para, Amin Tower (Lift 7), Agrabad Access Road',
     addressLocality: 'Chattogram',
     postalCode: '4100',
     addressCountry: 'BD',
@@ -127,7 +127,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   Metro Flex <span className="text-gold-gradient">Gym</span>
                 </span>
                 <span className="mt-1 hidden text-[10px] tracking-[0.3em] uppercase text-muted sm:block">
-                  Gents &amp; Ladies — Agrabad
+                  Gents &amp; Ladies — Agrabad Access Road
                 </span>
               </span>
             </Link>

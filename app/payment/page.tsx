@@ -176,7 +176,7 @@ export default function Payment() {
               <p className="mt-6 text-sm text-muted">
                 Prefer to visit?{' '}
                 <Link href="/#location" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                  Amin Tower (Lift 7), Agrabad Access Rd, Chattogram
+                  Amin Tower (Lift 7), Agrabad Access Road, Chattogram
                 </Link>
               </p>
             </div>

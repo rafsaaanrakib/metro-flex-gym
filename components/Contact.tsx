@@ -13,7 +13,7 @@ export const CALL_DISPLAY = '+880 1715-266172';
 export const FACEBOOK_URL = 'https://facebook.com/M.flexgym';
 export const MAPS_URL = 'https://maps.app.goo.gl/3e4QB8Xzyi5P57Nd6';
 export const ADDRESS =
-  'Rafiq Ullah Bari, Bepari Para, Amin Tower (Lift 7), Agrabad Access Rd, Chattogram 4100';
+  'Rafiq Ullah Bari, Bepari Para, Amin Tower (Lift 7), Agrabad Access Road, Chattogram 4100';
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (

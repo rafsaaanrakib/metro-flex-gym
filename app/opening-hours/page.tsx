@@ -8,12 +8,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Opening Hours — Metro Flex Gym Agrabad',
   description:
-    'Metro Flex Gym opening hours: Saturday to Thursday 7:00 AM–11:00 PM. Friday 5:00–9:00 PM (optional service). Agrabad, Chattogram.',
+    'Metro Flex Gym opening hours: Saturday to Thursday 7:00 AM–11:00 PM. Friday 5:00–9:00 PM (optional service). Agrabad Access Road, Chattogram.',
   alternates: { canonical: 'https://metroflexgym.com.bd/opening-hours' },
   openGraph: {
     title: 'Opening Hours — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym opening hours: Saturday to Thursday 7:00 AM–11:00 PM. Friday 5:00–9:00 PM (optional service). Agrabad, Chattogram.',
+      'Metro Flex Gym opening hours: Saturday to Thursday 7:00 AM–11:00 PM. Friday 5:00–9:00 PM (optional service). Agrabad Access Road, Chattogram.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/opening-hours',
     siteName: 'Metro Flex Gym',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Opening Hours — Metro Flex Gym Agrabad',
     description:
-      'Metro Flex Gym opening hours: Saturday to Thursday 7:00 AM–11:00 PM. Friday 5:00–9:00 PM (optional service). Agrabad, Chattogram.',
+      'Metro Flex Gym opening hours: Saturday to Thursday 7:00 AM–11:00 PM. Friday 5:00–9:00 PM (optional service). Agrabad Access Road, Chattogram.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };

@@ -72,7 +72,7 @@ export default function Home() {
         <div className="absolute inset-0" aria-hidden="true">
           <Image
             src="/images/hero.webp"
-            alt="Cardio area inside Metro Flex Gym, Agrabad"
+            alt="Cardio area inside Metro Flex Gym, Agrabad Access Road"
             fill
             priority
             sizes="100vw"
@@ -139,7 +139,7 @@ export default function Home() {
                 loading="lazy"
               />
               <p className="mt-3 text-xs uppercase tracking-[0.25em] text-muted">
-                The free weights area — Metro Flex Gym, Agrabad
+                The free weights area — Metro Flex Gym, Agrabad Access Road
               </p>
             </div>
           </Reveal>
@@ -349,7 +349,7 @@ export default function Home() {
           {[
             { q: 'What are the ladies-only hours?', a: '2:30–5:30 PM daily, with a female trainer facility.' },
             { q: 'What does membership cost?', a: 'Starts at ৳4,500, no admission fee, 15% VAT applies.' },
-            { q: 'Where exactly are you?', a: 'Amin Tower, Lift 7, Agrabad Access Rd, Chattogram.' },
+            { q: 'Where exactly are you?', a: 'Amin Tower, Lift 7, Agrabad Access Road, Chattogram.' },
           ].map((item, i) => (
             <Reveal key={item.q} delay={i * 0.06} className="bg-ink">
               <article className="flex h-full flex-col justify-between p-7 md:p-8">
@@ -405,7 +405,7 @@ export default function Home() {
       {/* ------------------------------------------------ 08 · LOCATION */}
       <section id="location" className="border-t border-white/10 bg-surface">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
-          <SectionHeading index="08" label="Location" title={<>Find us in<br />Agrabad.</>} />
+          <SectionHeading index="08" label="Location" title={<>Find us on<br />Agrabad Access Road.</>} />
           <div className="grid gap-10 lg:grid-cols-5 lg:gap-14">
             <Reveal className="lg:col-span-3">
               <a
