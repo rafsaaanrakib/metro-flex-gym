@@ -7,12 +7,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Gents Membership — Metro Flex Gym Agrabad',
   description:
-    'Gents membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,000 with the Winter Offer (regular ৳4,500), monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
+    'Gents membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
   alternates: { canonical: 'https://metroflexgym.com.bd/membership' },
   openGraph: {
     title: 'Gents Membership — Metro Flex Gym Agrabad',
     description:
-      'Gents membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,000 with the Winter Offer (regular ৳4,500), monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
+      'Gents membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/membership',
     siteName: 'Metro Flex Gym',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gents Membership — Metro Flex Gym Agrabad',
     description:
-      'Gents membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,000 with the Winter Offer (regular ৳4,500), monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
+      'Gents membership at Metro Flex Gym, Agrabad: 9 packages from ৳4,500, monthly to 10 years, with or without steam bath. No admission fee, 15% VAT applies.',
     images: ['https://metroflexgym.com.bd/images/hero.webp'],
   },
 };
@@ -54,21 +54,6 @@ export default function Membership() {
       <section className="mx-auto max-w-7xl px-4 pb-20 md:px-8">
         <SectionHeading index="01" label="Plans" title={<>Membership plans.</>} />
         <Reveal>
-          <div className="mb-10 border border-gold/40 bg-gold/5 p-6 md:p-7">
-            <p className="font-display text-lg font-black uppercase tracking-wide text-gold">❄ Winter Offer — prices below are discounted</p>
-            <p className="mt-2 text-sm leading-relaxed text-muted">
-              Every package is on offer right now, until 31 December 2026. The
-              crossed-out price is the regular price. See the{' '}
-              <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                Winter Offer page
-              </Link>{' '}
-              for the full offer, or the{' '}
-              <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                Regular Price page
-              </Link>{' '}
-              for regular prices only.
-            </p>
-          </div>
           <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted">
             Nine packages, from 1 month to 10 years — each with or without steam
             bath. No admission fee. 15% VAT applies.
@@ -90,9 +75,9 @@ export default function Membership() {
                   <tr key={p.name} className="border-b border-white/10 last:border-b-0">
                     <td className="px-5 py-4 font-display text-base font-black uppercase">{p.name}</td>
                     <td className="px-5 py-4 text-bone/90">{p.duration}</td>
-                    <td className="px-5 py-4"><span className="font-display text-lg font-black text-gold">{p.withoutOffer}</span> <span className="text-sm text-muted line-through">{p.withoutRegular}</span></td>
+                    <td className="px-5 py-4"><span className="font-display text-lg font-black text-gold">{p.withoutRegular}</span></td>
                     <td className="px-5 py-4">
-                      <span className="font-display text-lg font-black text-gold">{p.withSteamOffer}</span> <span className="text-sm text-muted line-through">{p.withSteamRegular}</span>
+                      <span className="font-display text-lg font-black text-gold">{p.withSteamRegular}</span>
                       <span className="block text-xs text-muted">({p.steamBaths} steam baths)</span>
                     </td>
                   </tr>
@@ -111,15 +96,13 @@ export default function Membership() {
                   <div className="flex items-baseline justify-between gap-3 border-t border-white/10 pt-3">
                     <span className="text-xs uppercase tracking-[0.2em] text-muted">Without steam</span>
                     <span className="text-right">
-                      <span className="font-display text-lg font-black text-gold">{p.withoutOffer}</span>{' '}
-                      <span className="text-sm text-muted line-through">{p.withoutRegular}</span>
+                      <span className="font-display text-lg font-black text-gold">{p.withoutRegular}</span>
                     </span>
                   </div>
                   <div className="flex items-baseline justify-between gap-3 border-t border-white/10 pt-3">
                     <span className="text-xs uppercase tracking-[0.2em] text-muted">With steam</span>
                     <span className="text-right">
-                      <span className="font-display text-lg font-black text-gold">{p.withSteamOffer}</span>{' '}
-                      <span className="text-sm text-muted line-through">{p.withSteamRegular}</span>
+                      <span className="font-display text-lg font-black text-gold">{p.withSteamRegular}</span>
                       <span className="block text-xs text-muted">({p.steamBaths} steam baths)</span>
                     </span>
                   </div>

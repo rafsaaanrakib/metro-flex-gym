@@ -106,12 +106,7 @@ export default function RegularPrice() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-8 text-sm text-muted">
-            No admission fee · 15% VAT applies. Right now every package is discounted
-            under the{' '}
-            <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              Winter Offer
-            </Link>
-             (ends 31 December 2026). Questions about plans?{' '}
+            No admission fee · 15% VAT applies. Questions about plans?{' '}
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
               Ask on WhatsApp
             </a>
