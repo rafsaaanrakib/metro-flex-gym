@@ -61,10 +61,10 @@ const NAV = [
   { href: '/gallery', label: 'Gallery' },
   { href: '/schedule', label: 'Our Schedule' },
   { href: '/trainers', label: 'Trainer Schedule' },
+  { href: '/offers', label: 'Ongoing Offer' },
   { href: '/membership', label: 'Gents Membership' },
   { href: '/ladies', label: 'Ladies Membership' },
   { href: '/student-membership', label: 'Student Membership' },
-  { href: '/offers', label: 'Ongoing Offer' },
   { href: '/payment', label: 'Payment Method' },
   { href: '/faq', label: 'Help & important Information' },
   { href: '/owner', label: 'Owner' },
@@ -165,10 +165,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/gallery" className="inline-block py-1 hover:text-gold">Gallery</Link></li>
                 <li><Link href="/schedule" className="inline-block py-1 hover:text-gold">Our Schedule</Link></li>
                 <li><Link href="/trainers" className="inline-block py-1 hover:text-gold">Trainer Schedule</Link></li>
+                <li><Link href="/offers" className="inline-block py-1 hover:text-gold">Ongoing Offer</Link></li>
                 <li><Link href="/membership" className="inline-block py-1 hover:text-gold">Gents Membership</Link></li>
                 <li><Link href="/ladies" className="inline-block py-1 hover:text-gold">Ladies Membership</Link></li>
                 <li><Link href="/student-membership" className="inline-block py-1 hover:text-gold">Student Membership</Link></li>
-                <li><Link href="/offers" className="inline-block py-1 hover:text-gold">Ongoing Offer</Link></li>
                 <li><Link href="/payment" className="inline-block py-1 hover:text-gold">Payment Method</Link></li>
                 <li><Link href="/faq" className="inline-block py-1 hover:text-gold">Help &amp; Important Information</Link></li>
                 <li><Link href="/owner" className="inline-block py-1 hover:text-gold">Owner</Link></li>
