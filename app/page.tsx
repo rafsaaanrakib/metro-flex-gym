@@ -264,7 +264,7 @@ export default function Home() {
           <SectionHeading index="05" label="Pricing" title={<>Simple plans.<br />No surprises.</>} />
           <Reveal>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted">
-              Winter Offer prices now — the crossed-out price is the regular price.
+              Winter Offer prices now, until 31 December 2026 — the crossed-out price is the regular price.
               From 1 month to 10 years, with or without steam bath.
             </p>
           </Reveal>

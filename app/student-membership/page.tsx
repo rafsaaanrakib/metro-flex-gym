@@ -8,12 +8,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Student Membership — Metro Flex Gym Agrabad',
   description:
-    'Student membership at Metro Flex Gym: ৳3,000 admission + ৳3,000 per month for HSC-level students with a valid student ID card.',
+    'Student membership at Metro Flex Gym: ৳3,000 admission + ৳3,000 per month. Limited to HSC-level students only; a valid student ID card is required.',
   alternates: { canonical: 'https://metroflexgym.com.bd/student-membership' },
   openGraph: {
     title: 'Student Membership — Metro Flex Gym Agrabad',
     description:
-      'Student membership at Metro Flex Gym: ৳3,000 admission + ৳3,000 per month for HSC-level students with a valid student ID card.',
+      'Student membership at Metro Flex Gym: ৳3,000 admission + ৳3,000 per month. Limited to HSC-level students only; a valid student ID card is required.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/student-membership',
     siteName: 'Metro Flex Gym',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Student Membership — Metro Flex Gym Agrabad',
     description:
-      'Student membership at Metro Flex Gym: ৳3,000 admission + ৳3,000 per month for HSC-level students with a valid student ID card.',
+      'Student membership at Metro Flex Gym: ৳3,000 admission + ৳3,000 per month. Limited to HSC-level students only; a valid student ID card is required.',
     images: ['https://metroflexgym.com.bd/images/student-poster.webp'],
   },
 };
@@ -48,8 +48,8 @@ export default function StudentMembership() {
             <span className="text-gold-gradient">membership.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
-            For HSC-level students with a valid student ID card. Train on the
-            same floor, with the same trainers — at the student price.
+            The student package is limited to HSC-level students only. Train on
+            the same floor, with the same trainers — at the student price.
           </p>
         </Reveal>
       </section>

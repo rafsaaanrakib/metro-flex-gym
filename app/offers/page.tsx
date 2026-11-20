@@ -8,12 +8,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Available Offers — Winter Offer | Metro Flex Gym Agrabad',
   description:
-    'Winter Offer at Metro Flex Gym: every membership discounted — 1 month from ৳4,000 (regular ৳4,500). No admission fee, 15% VAT applies.',
+    'Winter Offer at Metro Flex Gym: every membership discounted — 1 month from ৳4,000 (regular ৳4,500). No admission fee, 15% VAT applies. Ends 31 December 2026.',
   alternates: { canonical: 'https://metroflexgym.com.bd/offers' },
   openGraph: {
     title: 'Available Offers — Winter Offer | Metro Flex Gym Agrabad',
     description:
-      'Winter Offer at Metro Flex Gym: every membership discounted — 1 month from ৳4,000 (regular ৳4,500). No admission fee, 15% VAT applies.',
+      'Winter Offer at Metro Flex Gym: every membership discounted — 1 month from ৳4,000 (regular ৳4,500). No admission fee, 15% VAT applies. Ends 31 December 2026.',
     type: 'website',
     url: 'https://metroflexgym.com.bd/offers',
     siteName: 'Metro Flex Gym',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Available Offers — Winter Offer | Metro Flex Gym Agrabad',
     description:
-      'Winter Offer at Metro Flex Gym: every membership discounted — 1 month from ৳4,000 (regular ৳4,500). No admission fee, 15% VAT applies.',
+      'Winter Offer at Metro Flex Gym: every membership discounted — 1 month from ৳4,000 (regular ৳4,500). No admission fee, 15% VAT applies. Ends 31 December 2026.',
     images: ['https://metroflexgym.com.bd/images/offers-winter.webp'],
   },
 };
@@ -47,7 +47,8 @@ export default function Offers() {
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
             Every membership package is discounted right now — with or without
-            steam bath. No admission fee. 15% VAT applies.
+            steam bath. No admission fee. 15% VAT applies. The offer ends
+            31 December 2026.
           </p>
         </Reveal>
       </section>
@@ -139,8 +140,8 @@ export default function Offers() {
             <Link href="/regular-price" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
               Regular Price page
             </Link>{' '}
-            for the full list. No admission fee · 15% VAT applies. To join at the
-            offer price, message the gym on WhatsApp.
+            for the full list. No admission fee · 15% VAT applies. The offer ends 31 December 2026.
+            To join at the offer price, message the gym on WhatsApp.
           </p>
         </Reveal>
       </section>

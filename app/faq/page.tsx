@@ -97,7 +97,8 @@ export default function Faq() {
                     Membership starts at <span className="font-display font-extrabold text-gold">৳4,000</span> with the
                     Winter Offer (regular ৳4,500) for 1 month without a steam bath. There are
                     9 packages, from 1 month to 10 years, each with or without steam bath.
-                    No admission fee. 15% VAT applies. See the{' '}
+                    No admission fee. 15% VAT applies. The offer ends 31 December 2026.
+                    See the{' '}
                     <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                       Winter Offer
                     </Link>{' '}
@@ -116,8 +117,9 @@ export default function Faq() {
                   <span aria-hidden="true" className="shrink-0 font-body text-2xl font-light text-gold transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-                  Yes — HSC-level students with a valid student ID card: admission
-                  ৳3,000 and ৳3,000 per month. No steam bath included (৳300 per
+                  Yes — the student package is limited to HSC-level students only, and a
+                  valid student ID card is required: admission ৳3,000 and ৳3,000 per
+                  month. No steam bath included (৳300 per
                   steam). 15% VAT applies. See the{' '}
                   <Link href="/student-membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                     Student Membership page

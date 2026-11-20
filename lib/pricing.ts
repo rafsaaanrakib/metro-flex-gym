@@ -10,9 +10,10 @@
 /* packages. 15% VAT applies. The old demo prices (৳2,000/5,000/       */
 /* 9,000/15,000 + ৳500 admission) are RETIRED — never show them.       */
 /*                                                                     */
-/* FLAG 2026-11-18 — 5-year steam count: the rate card says 180 steam */
-/* baths for Gold 5yr; the Winter Offer poster says 188. Using 188    */
-/* (newest material). Confirm with the gym if it matters.              */
+/* CONFIRMED 2026-11-20 — 5-year steam count is 188: the Winter Offer
+ * poster Rakib re-sent shows (188 STEAM BATH) for Gold 5yr. The old
+ * rate card's 180 is superseded. Winter Offer ends 31 December 2026
+ * (Rakib, 2026-11-20). */
 /* ------------------------------------------------------------------ */
 
 export type GymPackage = {

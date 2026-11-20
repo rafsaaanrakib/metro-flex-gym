@@ -57,8 +57,8 @@ export default function Membership() {
           <div className="mb-10 border border-gold/40 bg-gold/5 p-6 md:p-7">
             <p className="font-display text-lg font-black uppercase tracking-wide text-gold">❄ Winter Offer — prices below are discounted</p>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              Every package is on offer right now. The crossed-out price is the regular
-              price. See the{' '}
+              Every package is on offer right now, until 31 December 2026. The
+              crossed-out price is the regular price. See the{' '}
               <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 Winter Offer page
               </Link>{' '}
@@ -138,8 +138,8 @@ export default function Membership() {
           <div className="mt-8 border border-gold/40 bg-gold/5 p-6 md:p-7">
             <h3 className="font-display text-xl font-black uppercase">Student? There is a student package.</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              HSC-level students with a valid student ID card: admission ৳3,000 and
-              ৳3,000 per month. No steam bath included (৳300 per steam).{' '}
+              The student package is limited to HSC-level students only — a valid
+              student ID card is required. Admission ৳3,000 and ৳3,000 per month. No steam bath included (৳300 per steam).{' '}
               <Link href="/student-membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
                 Student Membership →
               </Link>

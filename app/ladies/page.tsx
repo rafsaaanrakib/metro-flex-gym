@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal, SectionHeading } from '@/components/Reveal';
 import { WhatsAppButton, CallButton, LADIES_WHATSAPP_URL, MAPS_URL, ADDRESS } from '@/components/Contact';
+import { PACKAGES } from '@/lib/pricing';
 import { OpenNow } from '@/components/OpenNow';
 import type { Metadata } from 'next';
 
@@ -121,9 +122,8 @@ export default function Ladies() {
               all times.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              Which programs run inside the ladies-only slot, and whether ladies&apos;
-              membership prices differ from gents&apos; — ask on WhatsApp and the gym
-              will confirm the current details.
+              Which programs run inside the ladies-only slot — ask on WhatsApp and
+              the gym will confirm the current details.
             </p>
           </Reveal>
         </div>
@@ -136,29 +136,82 @@ export default function Ladies() {
           <div className="max-w-2xl">
             <Reveal>
               <p className="text-base md:text-lg leading-relaxed text-bone/90">
-                Membership packages run from ৳4,000 a month with the Winter Offer
-                (regular ৳4,500), monthly to 10 years, with or without steam bath.
-                No admission fee; 15% VAT applies.
-              </p>
-              <p className="mt-5 text-base leading-relaxed text-muted">
-                Whether ladies&apos; membership prices differ from gents&apos; — ask
-                on WhatsApp and the gym will confirm the current details.
-              </p>
-              <p className="mt-6 text-sm text-muted">
-                <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                  See the Winter Offer →
-                </Link>{' '}
-                ·{' '}
-                <Link href="/payment" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                  Payment Method →
-                </Link>{' '}
-                ·{' '}
-                <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-                  Gents Membership →
-                </Link>
+                Ladies pay the same membership prices as gents — nine packages,
+                from 1 month to 10 years, with or without steam bath. The Winter
+                Offer prices below are discounted, and the offer ends
+                31 December 2026. No admission fee; 15% VAT applies.
               </p>
             </Reveal>
           </div>
+          <Reveal>
+            <div className="mt-10 hidden border border-white/10 md:block">
+              <table className="w-full min-w-[640px] text-left text-sm">
+                <thead>
+                  <tr className="border-b border-white/10 bg-surface font-display text-xs font-extrabold uppercase tracking-[0.2em] text-gold">
+                    <th scope="col" className="px-5 py-4">Package</th>
+                    <th scope="col" className="px-5 py-4">Duration</th>
+                    <th scope="col" className="px-5 py-4">Without steam bath</th>
+                    <th scope="col" className="px-5 py-4">With steam bath</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {PACKAGES.map((p) => (
+                    <tr key={p.name} className="border-b border-white/10 last:border-b-0">
+                      <td className="px-5 py-4 font-display text-base font-black uppercase">{p.name}</td>
+                      <td className="px-5 py-4 text-bone/90">{p.duration}</td>
+                      <td className="px-5 py-4"><span className="font-display text-lg font-black text-gold">{p.withoutOffer}</span> <span className="text-sm text-muted line-through">{p.withoutRegular}</span></td>
+                      <td className="px-5 py-4">
+                        <span className="font-display text-lg font-black text-gold">{p.withSteamOffer}</span> <span className="text-sm text-muted line-through">{p.withSteamRegular}</span>
+                        <span className="block text-xs text-muted">({p.steamBaths} steam baths)</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-10 grid gap-px bg-white/10 md:hidden">
+              {PACKAGES.map((p) => (
+                <article key={p.name} className="bg-ink p-5">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <h3 className="font-display text-lg font-black uppercase">{p.name}</h3>
+                    <span className="text-sm text-muted">{p.duration}</span>
+                  </div>
+                  <div className="mt-4 space-y-3">
+                    <div className="flex items-baseline justify-between gap-3 border-t border-white/10 pt-3">
+                      <span className="text-xs uppercase tracking-[0.2em] text-muted">Without steam</span>
+                      <span className="text-right">
+                        <span className="font-display text-lg font-black text-gold">{p.withoutOffer}</span>{' '}
+                        <span className="text-sm text-muted line-through">{p.withoutRegular}</span>
+                      </span>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-3 border-t border-white/10 pt-3">
+                      <span className="text-xs uppercase tracking-[0.2em] text-muted">With steam</span>
+                      <span className="text-right">
+                        <span className="font-display text-lg font-black text-gold">{p.withSteamOffer}</span>{' '}
+                        <span className="text-sm text-muted line-through">{p.withSteamRegular}</span>
+                        <span className="block text-xs text-muted">({p.steamBaths} steam baths)</span>
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-8 text-sm text-muted">
+              <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                See the Winter Offer →
+              </Link>{' '}
+              ·{' '}
+              <Link href="/payment" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Payment Method →
+              </Link>{' '}
+              ·{' '}
+              <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                Gents Membership →
+              </Link>
+            </p>
+          </Reveal>
         </div>
       </section>
 
