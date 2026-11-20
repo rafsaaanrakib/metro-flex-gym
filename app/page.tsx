@@ -91,9 +91,11 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/15 pt-5 text-sm text-muted">
             <OpenNow />
             <span aria-hidden="true" className="hidden text-gold sm:inline">✦</span>
-            <span>Sat–Thu, 7:00 AM – 11:00 PM · Fri 5–9 PM (optional service)</span>
-            <span aria-hidden="true" className="hidden text-gold sm:inline">✦</span>
-            <span>Gents &amp; Ladies</span>
+            <span>
+              Saturday to Thursday, 7:00 AM – 11:00 PM
+              <br />
+              Friday 5–9 PM (optional service)
+            </span>
           </div>
         </div>
       </section>
@@ -111,8 +113,7 @@ export default function Home() {
             <p className="mt-5 text-base leading-relaxed text-muted">
               Commercial gym equipment (Impulse & Real Leader), a strong cardio section, steam bath, food cafe and
               lockers — everything in one place, so you can train, recover and get on
-              with your day. Ladies train in a dedicated afternoon slot with a female
-              trainer available.
+              with your day.
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted">
               8 trainers on the floor — 6 male, 2 female.{' '}
