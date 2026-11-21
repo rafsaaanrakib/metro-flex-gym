@@ -58,6 +58,35 @@ const MOBILE = [
   { service: 'Nagad', accountName: 'Metro Flex Gym', number: '01715-266172', type: 'Personal' },
 ];
 
+/* The four package pages, worded EXACTLY as the gym wrote them
+   (message to Rakib, 2026-11-21). */
+const PACKAGES = [
+  {
+    n: '01',
+    title: 'Gents Membership',
+    href: '/membership',
+    text: 'Explore all membership packages available for male members.',
+  },
+  {
+    n: '02',
+    title: 'Ladies Membership',
+    href: '/ladies',
+    text: 'Explore all membership packages available for female members.',
+  },
+  {
+    n: '03',
+    title: 'Student Membership',
+    href: '/student-membership',
+    text: 'Explore exclusive membership packages designed for students.',
+  },
+  {
+    n: '04',
+    title: 'Ongoing Offers',
+    href: '/offers',
+    text: 'Discover our latest membership offers, special discounts, and limited-time promotions.',
+  },
+];
+
 const STEPS = [
   { n: '01', title: 'Choose a plan', text: 'Pick a membership plan — or ask on WhatsApp if you are not sure which one fits you.' },
   { n: '02', title: 'Pay by any method', text: 'Bank transfer, bKash or Nagad — use the exact account details on this page.' },
@@ -78,35 +107,52 @@ export default function Payment() {
             <span className="text-gold-gradient">your way.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
-            To pay online, first pick your package on the{' '}
-            <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              Gents Membership
-            </Link>
-            ,{' '}
-            <Link href="/ladies" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              Ladies Membership
-            </Link>
-            ,{' '}
-            <Link href="/student-membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              Student Membership
-            </Link>{' '}
-            or{' '}
+            To make an online membership payment, first visit the relevant
+            membership page or the{' '}
             <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
               Ongoing Offers
             </Link>{' '}
-            page — then contact the gym on WhatsApp at{' '}
-            <a href={WHATSAPP_URL} className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              01715-266172
-            </a>{' '}
-            for payment instructions. Online payment methods: bank transfer, bKash &amp; Nagad.
+            page and choose your preferred membership package.
           </p>
         </Reveal>
+      </section>
+
+      {/* Choose your package — the gym's own four options */}
+      <section className="border-t border-white/10 bg-surface">
+        <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
+          <SectionHeading index="01" label="Choose your package" title={<>Pick a package<br />first.</>} />
+          <div className="grid gap-6 md:grid-cols-2">
+            {PACKAGES.map((p, i) => (
+              <Reveal key={p.n} delay={i * 0.08}>
+                <Link href={p.href} className="block h-full">
+                  <article className="h-full border border-white/10 bg-ink p-7 transition-colors hover:border-gold/60">
+                    <span className="font-display text-3xl font-black text-gold">{p.n}</span>
+                    <h3 className="mt-4 font-display text-xl font-black uppercase">
+                      {p.title} <span className="text-gold">&rarr;</span>
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted">{p.text}</p>
+                  </article>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal delay={0.1}>
+            <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted">
+              Once you have selected your preferred membership package or ongoing
+              offer, contact us via WhatsApp at{' '}
+              <a href={WHATSAPP_URL} className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+                01715-266172
+              </a>{' '}
+              for payment instructions and further assistance.
+            </p>
+          </Reveal>
+        </div>
       </section>
 
       {/* How to pay */}
       <section className="border-t border-white/10 bg-surface">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
-          <SectionHeading index="01" label="How to pay" title={<>Three steps<br />and you&apos;re in.</>} />
+          <SectionHeading index="02" label="How to pay" title={<>Three steps<br />and you&apos;re in.</>} />
           <div className="grid gap-6 md:grid-cols-3">
             {STEPS.map((s, i) => (
               <Reveal key={s.n} delay={i * 0.08}>
@@ -123,7 +169,7 @@ export default function Payment() {
 
       {/* Bank transfer */}
       <section className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
-        <SectionHeading index="02" label="Bank transfer" title={<>Pay by bank.</>} />
+        <SectionHeading index="03" label="Bank transfer" title={<>Pay by bank.</>} />
         <div className="grid gap-6 lg:grid-cols-3">
           {BANKS.map((b, i) => (
             <Reveal key={b.bank} delay={i * 0.08}>
@@ -163,7 +209,7 @@ export default function Payment() {
       {/* Mobile banking */}
       <section className="border-t border-white/10 bg-surface">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
-          <SectionHeading index="03" label="Mobile banking" title={<>Or pay by<br />bKash &amp; Nagad.</>} />
+          <SectionHeading index="04" label="Mobile banking" title={<>Or pay by<br />bKash &amp; Nagad.</>} />
           <div className="grid gap-6 md:grid-cols-2">
             {MOBILE.map((m, i) => (
               <Reveal key={m.service} delay={i * 0.08}>
