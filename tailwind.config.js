@@ -21,6 +21,7 @@ module.exports = {
       fontFamily: {
         display: ['var(--font-archivo)', 'Arial', 'sans-serif'],
         body: ['var(--font-inter)', 'Arial', 'sans-serif'],
+        bangla: ['var(--font-bangla)', 'sans-serif'],
       },
     },
   },

@@ -14,6 +14,8 @@ import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/latin-500.css';
 import '@fontsource/inter/latin-600.css';
 import '@fontsource/inter/latin-700.css';
+// Bengali font for the menu's Bangla labels (self-hosted, same pattern).
+import '@fontsource/noto-sans-bengali/bengali-700.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
@@ -57,17 +59,17 @@ export const viewport: Viewport = {
 };
 
 const NAV = [
-  { href: '/about', label: 'ABOUT US' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/schedule', label: 'Our Schedule' },
-  { href: '/trainers', label: 'Trainer Schedule' },
-  { href: '/offers', label: 'Ongoing Offer' },
-  { href: '/membership', label: 'Gents Membership' },
-  { href: '/ladies', label: 'Ladies Membership' },
-  { href: '/student-membership', label: 'Student Membership' },
-  { href: '/payment', label: 'Payment Method' },
-  { href: '/faq', label: 'Help & important Information' },
-  { href: '/owner', label: 'Owner' },
+  { href: '/about', label: 'ABOUT US', bn: 'আমাদের সম্পর্কে' },
+  { href: '/gallery', label: 'Gallery', bn: 'গ্যালারি' },
+  { href: '/schedule', label: 'Our Schedule', bn: 'আমাদের সময়সূচি' },
+  { href: '/trainers', label: 'Trainer Schedule', bn: 'ট্রেইনার সময়সূচি' },
+  { href: '/offers', label: 'Ongoing Offer', bn: 'চলমান অফার' },
+  { href: '/membership', label: 'Gents Membership', bn: 'জেন্টস মেম্বারশিপ' },
+  { href: '/ladies', label: 'Ladies Membership', bn: 'লেডিস মেম্বারশিপ' },
+  { href: '/student-membership', label: 'Student Membership', bn: 'স্টুডেন্ট মেম্বারশিপ' },
+  { href: '/payment', label: 'Payment Method', bn: 'পেমেন্ট পদ্ধতি' },
+  { href: '/faq', label: 'Help & important Information', bn: 'সাহায্য ও গুরুত্বপূর্ণ তথ্য' },
+  { href: '/owner', label: 'Owner', bn: 'মালিক' },
 ];
 
 const jsonLd = {
