@@ -78,16 +78,27 @@ export default function Payment() {
             <span className="text-gold-gradient">your way.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-muted">
-            For online payment — by bank transfer, bKash or Nagad — contact the
-            gym on WhatsApp at{' '}
-            <a href={WHATSAPP_URL} className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
-              01715-266172
-            </a>
-            . Pick a plan on the{' '}
+            To pay online, first pick your package on the{' '}
             <Link href="/membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
               Gents Membership
+            </Link>
+            ,{' '}
+            <Link href="/ladies" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+              Ladies Membership
+            </Link>
+            ,{' '}
+            <Link href="/student-membership" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+              Student Membership
             </Link>{' '}
-            page first, then message the gym to pay.
+            or{' '}
+            <Link href="/offers" className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+              Ongoing Offers
+            </Link>{' '}
+            page — then contact the gym on WhatsApp at{' '}
+            <a href={WHATSAPP_URL} className="font-semibold text-gold underline underline-offset-4 hover:text-gold-bright">
+              01715-266172
+            </a>{' '}
+            for payment instructions. Online payment methods: bank transfer, bKash &amp; Nagad.
           </p>
         </Reveal>
       </section>
