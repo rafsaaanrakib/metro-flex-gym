@@ -59,17 +59,17 @@ export const viewport: Viewport = {
 };
 
 const NAV = [
-  { href: '/about', label: 'ABOUT US', bn: 'আমাদের সম্পর্কে' },
-  { href: '/gallery', label: 'Gallery', bn: 'গ্যালারি' },
-  { href: '/schedule', label: 'Our Schedule', bn: 'আমাদের সময়সূচি' },
-  { href: '/trainers', label: 'Trainer Schedule', bn: 'ট্রেইনার সময়সূচি' },
+  { href: '/about', label: 'ABOUT US', bn: 'আমাদের পরিচিতি' },
+  { href: '/gallery', label: 'Gallery', bn: 'ছবির গ্যালারি' },
+  { href: '/schedule', label: 'Our Schedule', bn: 'জিমের সময়সূচি' },
+  { href: '/trainers', label: 'Trainer Schedule', bn: 'ট্রেইনারদের সময়সূচি' },
   { href: '/offers', label: 'Ongoing Offer', bn: 'চলমান অফার' },
-  { href: '/membership', label: 'Gents Membership', bn: 'জেন্টস মেম্বারশিপ' },
-  { href: '/ladies', label: 'Ladies Membership', bn: 'লেডিস মেম্বারশিপ' },
-  { href: '/student-membership', label: 'Student Membership', bn: 'স্টুডেন্ট মেম্বারশিপ' },
+  { href: '/membership', label: 'Gents Membership', bn: 'পুরুষদের মেম্বারশিপ' },
+  { href: '/ladies', label: 'Ladies Membership', bn: 'নারীদের মেম্বারশিপ' },
+  { href: '/student-membership', label: 'Student Membership', bn: 'শিক্ষার্থীদের মেম্বারশিপ' },
   { href: '/payment', label: 'Payment Method', bn: 'পেমেন্ট পদ্ধতি' },
-  { href: '/faq', label: 'Help & important Information', bn: 'সাহায্য ও গুরুত্বপূর্ণ তথ্য' },
-  { href: '/owner', label: 'Owner', bn: 'মালিক' },
+  { href: '/faq', label: 'Help & important Information', bn: 'সহায়তা ও প্রয়োজনীয় তথ্য' },
+  { href: '/owner', label: 'Owner', bn: 'প্রতিষ্ঠাতা ও মালিক' },
 ];
 
 const jsonLd = {
